@@ -737,7 +737,8 @@ Include Demon Tail Plug by Sex Toys.
 Include Prostate Massager Plug by Sex Toys.
 Include Anal Beads by Sex Toys.
 Include Ben Wa Balls by Sex Toys.
-Include Skippy Ball by Sex Toys.
+
+Include Skippy Ball by Objects.
 
 Include Condom of Kings by Clothing.
 
