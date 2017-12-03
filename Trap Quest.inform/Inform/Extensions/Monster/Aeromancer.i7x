@@ -966,7 +966,7 @@ To compute aeromancer science of (M - a confident aeromancer):
 	otherwise: [Selkie: it'd be sweet if she could add a step or two to a latex-doll transformation that was underway]
 		if the player is mounted:
 			if the player is on a skippy ball (called S) and there is a skippy dildo (called D) part of S:
-				say "A beam directed by [M] shoots towards you, but it seems to have hit your Skippy Ball, rather than you.";
+				say "A beam directed by [M] shoots towards you, but it seems to have hit your skippy ball, rather than you.";
 				sizeUp D by a random number between 0 and 3;
 		otherwise:
 			say "A beam flies straight from her wand to your face!";
