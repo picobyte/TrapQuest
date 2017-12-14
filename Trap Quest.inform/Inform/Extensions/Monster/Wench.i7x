@@ -92,7 +92,7 @@ To say PresentFriendlyAcceptanceFlav of (M - a wench):
 
 To say DiaperReaction of (M - a wench):
 	if M is unfriendly:
-		say "The [M] giggles manically.  [speech style of M]'[if M is penetrating a body part]Seriously?!  How entirely absolutely pathetic.'[otherwise if the player is upright]Are you sure a disgusting baby like you can beat me?'[otherwise]Oh this is unreal!  Did you just do what I think you did?!'[end if][roman type][line break]";
+		say "The [M] giggles manically.  [speech style of M]'[if M is penetrating a body part]Seriously?!  How entirely absolutely pathetic.'[otherwise if the player is not prone]Are you sure a disgusting baby like you can beat me?'[otherwise]Oh this is unreal!  Did you just do what I think you did?!'[end if][roman type][line break]";
 	otherwise:
 		bore M;
 		say "[speech style of M]'Eew, gross!'[roman type]  The [M] does not look impressed.  [speech style of M]'[if M is interested]I'm sorry but you're on your own.'[otherwise if the number of interested friendly monsters is 0]No wonder nobody likes you.'[otherwise]Can't you find somewhere private to be a disgusting baby?'[end if][roman type][line break]";
@@ -777,7 +777,7 @@ To say SubmissiveResponse of (M - a wench):
 		say "[UnfriendlyResponse of M]";
 	otherwise if the player is female and the sex addiction of the player < 14:
 		say "[speech style of M]'[one of]Go fuck yourself, bitch!'[or]You know how to make it up to me, bitch.'[or]If you're really sorry, you'll get on your fucking knees.'[at random][roman type][line break]";
-	otherwise if player is upright:
+	otherwise if player is not prone:
 		say "[speech style of M]'[one of]Get on your fucking knees then, bitch.'[or]Get on your knees then, skank.'[or]Get on the ground then, skank.'[at random][roman type][line break]";
 	otherwise:
 		say "[speech style of M]'[one of]Glad you see things my way.'[or]Wow, you really are a slut.'[or]Don't worry, bitch, I'll fucking feed you.'[at random][roman type][line break]".

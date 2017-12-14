@@ -51,7 +51,7 @@ Carry out quaffing elixir of life:
 		SexChange the player;
 		say "But the elixir hasn't finished yet!  ";
 	if the pregnancy of the player is 0, say "Your [BellyDesc] rumbles[if the largeness of belly < 4] and slightly expands[end if].  You feel a small kick coming from within.  [if the children of the player is 0][variable custom style]No way...  [roman type][end if]It looks like you're pregnant[if the children of the player > 0] again[end if]!";
-	otherwise say "Your [BellyDesc] rumbles, and energy rushes to your womb.  For a brief moment you can feel your womb perfectly - you can feel exactly where it is, how swollen and expanded it is, and you can feel your baby inside with as if the inside lining of your womb had all the sensitive nerve endings of your hand.  As you [if the player is upright]stand[otherwise]lie[end if] there stunned, the feeling disappears and your [vagina] is left with a dull, throbbing ache as if it can't wait to feel the sensation of being stretched beyond its limits and giving birth[if the children of the player > 0] again[end if].";
+	otherwise say "Your [BellyDesc] rumbles, and energy rushes to your womb.  For a brief moment you can feel your womb perfectly - you can feel exactly where it is, how swollen and expanded it is, and you can feel your baby inside with as if the inside lining of your womb had all the sensitive nerve endings of your hand.  As you [stayDesc] there stunned, the feeling disappears and your [vagina] is left with a dull, throbbing ache as if it can't wait to feel the sensation of being stretched beyond its limits and giving birth[if the children of the player > 0] again[end if].";
 	now seconds is 6;
 	if the pregnancy of the player > 0:
 		increase the pregnancy rate of the player by 1;

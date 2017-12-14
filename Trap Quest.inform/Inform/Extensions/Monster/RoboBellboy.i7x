@@ -296,7 +296,7 @@ To compute talk option (N - 2) to (M - a robobellboy):
 
 To compute answer of (M - a robobellboy):
 	if M is unfriendly:
-		say "[first custom style]'PLEASE [if the player is upright]KNEEL[otherwise]WAIT[end if], AND ALLOW ME TO ASSIST YOU.'[roman type][line break]";
+		say "[first custom style]'PLEASE [if the player is not prone]KNEEL[otherwise]WAIT[end if], AND ALLOW ME TO ASSIST YOU.'[roman type][line break]";
 	otherwise:
 		say "[first custom style]'PLEASE ASK THE BUTLER FOR ASSISTANCE, [robogreeting].'[roman type][line break]".
 

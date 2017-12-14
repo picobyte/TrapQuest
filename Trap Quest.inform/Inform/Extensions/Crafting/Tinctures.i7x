@@ -82,7 +82,7 @@ A time based rule (this is the acceleration tincture decay rule):
 			if the semen volume of vagina > 1 and the pregnancy of the player is 0 and pregnancy fetish is 1 and acceleration-tincture-timer < 48 and the number of family things > 0:
 				say "[ConceptionFlav]";
 				now the pregnancy of the player is 1;
-			if the player is upright and acceleration-tincture-bonus > 0, increase the fat-burning of the player by 20.
+			if the player is not prone and acceleration-tincture-bonus > 0, increase the fat-burning of the player by 20.
 
 
 

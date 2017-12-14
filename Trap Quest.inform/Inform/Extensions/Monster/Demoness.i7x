@@ -160,9 +160,9 @@ To compute perception of (M - a demoness):
 			if image cutscenes is 1, display figure of demoness interact 7;
 			say "Your holy aura does seem to have some effect against her, as you are easily able to resist her dominating aura which tries to make you kneel on command.";
 		otherwise:
-			say "[speech style of M]'[if M is uninterested]You, whore!  [otherwise]You know what?  [end if][if the player is upright]Kneel down, I feel like ruining someone.'[otherwise]Stay down there, I'm going to punish you.'[end if][roman type][line break]Uh-oh...";
+			say "[speech style of M]'[if M is uninterested]You, whore!  [otherwise]You know what?  [end if][if the player is not prone]Kneel down, I feel like ruining someone.'[otherwise]Stay down there, I'm going to punish you.'[end if][roman type][line break]Uh-oh...";
 			if image cutscenes is 1, display figure of demoness interact 8;
-			if a random number between 1 and 15 < the bimbo of the player and the player is upright and the player is not dildo stuck:
+			if a random number between 1 and 15 < the bimbo of the player and the player is not prone and the player is not dildo stuck:
 				say "The [M] has such a powerful dominating aura that you mindlessly drop to your knees in front of her[if the bimbo of the player > 8], nearly drooling at the thought of her heel drilling inside you[end if].";
 				now seconds is 1;
 				try kneeling;
@@ -170,7 +170,7 @@ To compute perception of (M - a demoness):
 		say "[speech style of M]'[if T is 0][one of]Oh wow, nice heels!  Where did you get them from?'[or]Glad to see you're still wearing proper heels.'[stopping][otherwise]Ah, a fellow servant of the Master.'[end if][roman type][line break]";
 		calm M;
 		if image cutscenes is 1, display figure of demoness interact 6;
-	otherwise if the player is prone:
+	otherwise if the player is not prone:
 		if the thickness of hips > 4 and the number of worn cursed plug panties is 0 and the player is not diapered:
 			say "[speech style of M]'Oh my, what a [tasty] looking ass you have.  I might just have to use it.'[roman type][line break]Uh-oh...";
 			if image cutscenes is 1, display figure of demoness interact 8;
@@ -181,7 +181,7 @@ To compute perception of (M - a demoness):
 			say "[speech style of M]'Keep crawling, girl, nothing to see here.'[roman type][line break]";
 			distract M;
 			if image cutscenes is 1, display figure of demoness interact 5;
-	otherwise if there are worn heels and T is 1:[we know by now that the player is upright]
+	otherwise if there are worn heels and T is 1:[we know by now that the player is not prone]
 		if M is friendly:
 			say "[speech style of M]'Those heels are tiny.  How pathetic.'[roman type][line break]";
 			distract M;
@@ -228,8 +228,8 @@ To compute DQ perception of (M - a demoness):
 			say "Immediately upon seeing you, she shrieks: [speech style of M]Your holy aura has no power out here, mortal!  Get on your knees and submit to me as your new Mistress, or I will make you!'[roman type][line break][if M is friendly]Apparently she doesn't like priestesses...[end if]";
 			say "Your holy aura does seem to have some effect against her, as you are easily able to resist her dominating aura which tries to make you kneel on command.";
 		otherwise:
-			say "[speech style of M]'[if M is uninterested]You, child!  [otherwise]You know what?  [end if][if the player is upright]Kneel down, I feel like punishing someone.'[otherwise]Stay down there, I'm going to punish you.'[end if][roman type][line break]Uh-oh...";
-			if a random number between 1 and 15 < the bimbo of the player and the player is upright and the player is not dildo stuck:
+			say "[speech style of M]'[if M is uninterested]You, child!  [otherwise]You know what?  [end if][if the player is not prone]Kneel down, I feel like punishing someone.'[otherwise]Stay down there, I'm going to punish you.'[end if][roman type][line break]Uh-oh...";
+			if a random number between 1 and 15 < the bimbo of the player and the player is not prone and the player is not dildo stuck:
 				say "The [M] has such a powerful dominating aura that you mindlessly drop to your knees in front of her.";
 				now seconds is 1;
 				try kneeling;
@@ -1248,11 +1248,11 @@ To compute friendly drink of (M - a demoness):
 	otherwise if M is dealing:
 		say "[speech style of M]'[one of]I don[']t give handouts. But I promise a drink and more if you lend me your mouth for a while.'[or]I told you about the deal already, don[']t waste my time if you aren[']t interested.'[stopping][roman type]";
 	otherwise if watersports fetish is 1:
-		say "[speech style of M]'You don[']t really have anything I want, but I suppose it would be fun to watch you drink my urine. [if the player is upright]Kneel.[otherwise]Open wide.[end if]'[roman type][line break]";
+		say "[speech style of M]'You don[']t really have anything I want, but I suppose it would be fun to watch you drink my urine. [if the player is not prone]Kneel.[otherwise]Open wide.[end if]'[roman type][line break]";
 		if the humiliation of the player > 17500 or the thirst of the player is 5:
-			say "[if the player is upright]You instantly get on your knees.  [end if]You [if the humiliation of the player > 17500]are happy to submit to the degradation[otherwise]are desperate enough to drink absolutely anything[end if].";
+			say "[if the player is not prone]You instantly get on your knees.  [end if]You [if the humiliation of the player > 17500]are happy to submit to the degradation[otherwise]are desperate enough to drink absolutely anything[end if].";
 			DrinkPiss;
-			if the player is upright, try kneeling;
+			if the player is not prone, try kneeling;
 		otherwise:
 			say "You aren't [if the thirst of the player < 4]nearly [end if]thirsty enough to drink her [urine]!";
 	otherwise if M is interested:
@@ -1261,7 +1261,7 @@ To compute friendly drink of (M - a demoness):
 		say "She doesn't seem to realize that you're talking to her.".
 	
 To compute desperate drinking to (M - a demoness):
-	say "You spot a [M]! You [if the player is upright]drop to your knees and [end if]beg [him of M] to give you something to drink.";
+	say "You spot a [M]! You [if the player is not prone]drop to your knees and [end if]beg [him of M] to give you something to drink.";
 	now the stance of the player is 1;
 	if M is unfriendly:
 		compute unfriendly drink of M;
@@ -1298,15 +1298,15 @@ To compute perception of (M - an abyssal demoness):
 			say "Immediately upon seeing you, she shrieks: [speech style of M]Your holy aura has no power out here, mortal!  Get on your knees and submit to me as your new Mistress, or I will make you!'[roman type][line break][if M is friendly]Apparently she doesn't like priestesses...[end if]";
 			say "Your holy aura does seem to have some effect against her, as you are easily able to resist her dominating aura which tries to make you kneel on command.";
 		otherwise:
-			say "[speech style of M]'[if M is uninterested]You, whore!  [otherwise]You know what?  [end if][if the player is upright]Kneel down, I feel like ruining someone.'[otherwise]Stay down there, I'm going to punish you.'[end if][roman type][line break]Uh-oh...";
-			if a random number between 1 and 15 < the bimbo of the player and the player is upright and the player is not dildo stuck:
+			say "[speech style of M]'[if M is uninterested]You, whore!  [otherwise]You know what?  [end if][if the player is not prone]Kneel down, I feel like ruining someone.'[otherwise]Stay down there, I'm going to punish you.'[end if][roman type][line break]Uh-oh...";
+			if a random number between 1 and 15 < the bimbo of the player and the player is not prone and the player is not dildo stuck:
 				say "The [M] has such a powerful dominating aura that you mindlessly drop to your knees in front of her[if the bimbo of the player > 8], nearly drooling at the thought of her heel drilling inside you[end if].";
 				now seconds is 1;
 				try kneeling;
 	otherwise if the player is prone:
 		say "[speech style of M]'[if the class of the player is cultist]Servant.'[otherwise if the class of the player is succubus]Good practice, sister. Glad to see some of his servants aren't idiots.'[otherwise]Get used to crawling, girl, all will be servants eventually.'[end if][roman type][line break]";
 		distract M;
-	otherwise: [We know by know that the player must be upright.]
+	otherwise: [We know by know that the player must be not prone.]
 		if the class of the player is succubus:
 			say "[speech style of M]'The mortals here are mine, sister. Do not forget that.'[roman type][line break]";
 			distract M;

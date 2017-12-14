@@ -27,7 +27,7 @@ REQUIRES COMMENTING
 +!]
 To Execute Takeoff:
 	now last-turn-flight is 1;
-	say "Your body is now lighter than air!  As you try to [if the player is upright]step[otherwise]crawl[end if] forward, your body is pushed off the ground![line break][bold type]You are now floating![line break][one of][if the bimbo of the player < 15][first custom style]What the fuck is happening to me?![otherwise][second custom style]Oooh, yay, I can fly!  Wait, how do I control where I go?  Waaaah![end if][or][if the bimbo of the player < 15][first custom style]Oh shit, not again...![otherwise][second custom style]Ooh, yay, I'm flying again!  Weeeee![end if][stopping][roman type][line break]";
+	say "Your body is now lighter than air!  As you try to [if the player is upright]step[otherwise][movementDesc][end if] forward, your body is pushed off the ground![line break][bold type]You are now floating![line break][one of][if the bimbo of the player < 15][first custom style]What the fuck is happening to me?![otherwise][second custom style]Oooh, yay, I can fly!  Wait, how do I control where I go?  Waaaah![end if][or][if the bimbo of the player < 15][first custom style]Oh shit, not again...![otherwise][second custom style]Ooh, yay, I'm flying again!  Weeeee![end if][stopping][roman type][line break]";
 	repeat with D running through dildo traps penetrating a fuckhole:
 		dislodge D;
 	let flav-said be 0;

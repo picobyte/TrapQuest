@@ -72,7 +72,7 @@ To compute perception of (M - a hellhound):
 	if the class of the player is living sex doll:
 		say "The [M] sniffs you, and then decides to leave you alone.";
 		bore M;
-	otherwise if the player is prone:
+	otherwise if the player is not upright:
 		anger M;
 		say "The [M] seems to notice you!  You could swear you see its mouth form into a sinister smile...";
 		now M is interested;

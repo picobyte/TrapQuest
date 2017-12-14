@@ -429,7 +429,7 @@ To compute ectoplasm to (M - a ghost):
 	otherwise now the slime-puddle of the location of M is 3;
 	if M is jismbodied ghost, increase the slime-puddle of the location of M by 10;
 	decrease the bank of M by 100;
-	if M is in the location of the player and the player is upright:
+	if M is in the location of the player and the player is not prone:
 		say "[if bukkake fetish is 1]The [M] ejaculates violently, knocking you to your knees with a torrent of bright green, glowing slime.[otherwise]The [M] releases a violent pulse of energy, knocking you to your knees[end if].";
 		try kneeling;[How many seconds the player is trapped before they can move]
 	otherwise if M is in the location of the player:
@@ -730,7 +730,7 @@ To say DragFlav of (M - a ghost) to (R - a room):
 	say "A swirling portal opens up as the [M] drags you toward the ceiling, swallowing you whole!".
 	
 To say DragArrival of (M - a ghost) to (R - a room):
-	say "The portal spits you out in the [R], where a [printed name of a random deep one in the location of the player] is there waiting for you, sporting a massive erection![if the player is upright][line break][bold type]You are now on your knees.[roman type][line break][end if]".	
+	say "The portal spits you out in the [R], where a [printed name of a random deep one in the location of the player] is there waiting for you, sporting a massive erection![if the player is not prone][line break][bold type]You are now on your knees.[roman type][line break][end if]".	
 
 This is the deep one express rule:
 	if current-monster is ghostly tentacle and player is not immobile and the bank of current-monster > 15:

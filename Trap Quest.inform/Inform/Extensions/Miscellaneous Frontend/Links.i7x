@@ -446,7 +446,7 @@ REQUIRES COMMENTING
 
 +!]
 To say unique-verb-desc of (T - gloryhole):
-	if inline hyperlinks >= 2 and the player is not immobile, say " [link][bracket][if the player is prone]suck[otherwise]use[end if][close bracket][as]use glory[end link]".
+	if inline hyperlinks >= 2 and the player is not immobile, say " [link][bracket][if the player is not upright]suck[otherwise]use[end if][close bracket][as]use glory[end link]".
 
 [!<SayUniqueVerbDescOfPocketbook>+
 

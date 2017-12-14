@@ -75,7 +75,7 @@ To compute furniture resting on (F - HotelBedPatrons):
 		now F is encountered.
 
 To compute PatronSpawning of (F - HotelBedPatrons):
-	if the player is upright, try kneeling;
+	if the player is not prone, try kneeling;
 	increase patronbed uses by 1;
 	let R be 1;
 	if diaper quest is 1:

@@ -287,7 +287,7 @@ To compute pregnancy:
 			increase the children of the player by 1;
 			now slow-pregnancy-tracker is 0;
 			now the father is the throne;
-			if the player is upright, try kneeling;
+			if the player is not prone, try kneeling;
 			now the semen volume of vagina is 0;
 			now the pregnancy of the player is 0;	
 			cancel father material of vagina;
@@ -317,7 +317,7 @@ REQUIRES COMMENTING
 
 +!]
 To say PregFlav:
-	say "[bold type][if the player is upright]You fall to your knees as your[otherwise]Your[end if] cervix starts dilating furiously.[roman type]  [if the bimbo of the player < 13][first custom style][one of]It's going to come out, I can't stop it![or]Not now, not again...[stopping][otherwise][second custom style][one of]I'm going to be a mother![or]I wonder how many kids I'm going to end up with?[or]I just keep popping them out, don't I?[or]I just love being bred![stopping][end if][roman type][line break]";
+	say "[bold type][if the player is not prone]You fall to your knees as your[otherwise]Your[end if] cervix starts dilating furiously.[roman type]  [if the bimbo of the player < 13][first custom style][one of]It's going to come out, I can't stop it![or]Not now, not again...[stopping][otherwise][second custom style][one of]I'm going to be a mother![or]I wonder how many kids I'm going to end up with?[or]I just keep popping them out, don't I?[or]I just love being bred![stopping][end if][roman type][line break]";
 
 [!<SayDefaultBirthScene>+
 
@@ -377,8 +377,8 @@ To Delay Labour:
 	if the class of the player is fertility goddess:
 		say "A sudden contraction sends a small, manageable amount of pain shooting from your womb to the rest of your body.[line break][if the bimbo of the player < 7 and the father is alive monster and the father is not regional alive monster][one of][first custom style]Okay, by staying away from [the father] I can prevent myself from having to give birth again...[or][stopping][otherwise if the bimbo of the player < 7][one of][first custom style]Okay, by keeping my [vagina] covered I think can prevent myself from having to give birth again...[or][stopping][otherwise][one of][second custom style]I just love being massive and pregnant, why would I want to give birth and have to start the process all over again?[or][stopping][end if][roman type][line break]";
 	otherwise:
-		say "A sudden contraction sends pain shooting from your womb to the rest of your body.  [if the player is upright]The contraction is so intense that you are forced to your knees.  [end if][if the father is alive monster and the father is not regional alive monster]You are filled with a desire to find [the father].[otherwise]You should probably make sure the exit to your vagina is clear![end if]";
-		if the player is upright, try kneeling;
+		say "A sudden contraction sends pain shooting from your womb to the rest of your body.  [if the player is not prone]The contraction is so intense that you are forced to your knees.  [end if][if the father is alive monster and the father is not regional alive monster]You are filled with a desire to find [the father].[otherwise]You should probably make sure the exit to your vagina is clear![end if]";
+		if the player is not prone, try kneeling;
 	now successful-pregnancy is 0.
 
 [!<SayPregnancyBugFlav>+

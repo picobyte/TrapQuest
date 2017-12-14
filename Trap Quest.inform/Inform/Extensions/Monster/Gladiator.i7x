@@ -231,7 +231,7 @@ To decide which number is the breast-happy of (M - a gladiator): [Is the gladiat
 	decide on 0.
 
 Definition: a gladiator (called M) is fed up:
-	if the player is prone:
+	if the player is not prone:
 		if the player is a flatchested trap:
 			if the size of penis <= min penis size, decide yes;
 		otherwise:
@@ -311,7 +311,7 @@ To compute appearance assessment of (M - a gladiator):
 		otherwise if the times-met of M is 0:
 			say "[speech style of M]'Are you new to these parts, traveller?  [one of]Well let me warn you now, you should learn to carry yourself with dignity and self-respect wherever you go, lest you wish to feel my wrath.'[or]I hope you are not another boring, weak sex addict like most of the new people I seem to meet down here as of late.'[in random order][roman type][line break]";
 		if M is unfriendly and M is interested: [It is possible that the above loss in favour has taken the player down to unfriendly levels.]
-			say "The [M] [if the player is upright]flexes her sword arm[otherwise]puts a forceful hand on your shoulder[end if].  [speech style of M]'I think [one of]it's time to take matters into my own hands.  I'll aid with the growing of your breasts, but then it will be up to you whether you carry them with the dignity and pride of a true woman or simply become another brain-dead big-titted slut.'[or]I was right the first time - you need a chest-focused makeover if you are to stand any chance of understanding what it truly means to be a woman.'[stopping][roman type][line break]";
+			say "The [M] [if the player is not prone]flexes her sword arm[otherwise]puts a forceful hand on your shoulder[end if].  [speech style of M]'I think [one of]it's time to take matters into my own hands.  I'll aid with the growing of your breasts, but then it will be up to you whether you carry them with the dignity and pride of a true woman or simply become another brain-dead big-titted slut.'[or]I was right the first time - you need a chest-focused makeover if you are to stand any chance of understanding what it truly means to be a woman.'[stopping][roman type][line break]";
 		otherwise if M is interested:
 			say "[if M is buddy]The [M] gives you a wide smile, but you struggle to decipher whether it is meant to be friendly or jeering.[otherwise if M is acquaintance]The [M] puts her hands on her hips, and seems content to watch you closely for now.[otherwise]The [M]'s tight pursed lips tell you everything you need to know about her current feelings towards you.[end if]".
 
@@ -388,7 +388,7 @@ To compute DQ perception of (M - a gladiator):
 		compute DQ appearance assessment of M;
 		if M is interested: [If she is interested he hasn't finished speaking.]
 			if M is unfriendly:
-				say "[speech style of M][if the player is upright]Get on your knees, and get what's coming to you.'[otherwise]In fact, stay right there, I'm going to treat you the way you deserve.'[end if][roman type][line break]";
+				say "[speech style of M][if the player is not prone]Get on your knees, and get what's coming to you.'[otherwise]In fact, stay right there, I'm going to treat you the way you deserve.'[end if][roman type][line break]";
 			otherwise if the favour of M < F and M is not buddy:
 				say "[speech style of M][one of]Just unacceptable.'[or]Honestly, I can't believe it even needed to be said.'[or]Must I really state the obvious?'[in random order][roman type][line break]";
 			otherwise:
@@ -893,7 +893,7 @@ To say ForcefeedDeclarationFlav of (M - a gladiator):
 	if M is unfriendly, say "[speech style of M]'[one of]Let me show you what grown-ups use their breasts for.'[or]Time for your milk!'[stopping][roman type][line break]".
 
 To say ForcefeedStartFlav of (M - a gladiator):
-	say "The [M] [if the player is prone]lays your back onto [his of M] lap and holds your head strongly with one hand[otherwise]pushes a large breast into your face[end if].  She coaxes her nipple into your mouth, and you have no choice but to accept it.".
+	say "The [M] [if the player is not prone]lays your back onto [his of M] lap and holds your head strongly with one hand[otherwise]pushes a large breast into your face[end if].  She coaxes her nipple into your mouth, and you have no choice but to accept it.".
 
 To compute forcefeed round (N - a number) of (M - a gladiator):
 	say "The [M] strokes your hair and [if the bimbo of the player > 14]allows you to suck the [milk] from her breast[otherwise]squeezes her breast, filling your mouth with milk[end if].  You [one of]relent and [or][stopping]swallow it all down.";
@@ -1352,7 +1352,7 @@ To compute unfriendly drink of (M - a gladiator):
 	if diaper quest is 1:
 		if M is grabbing the player:
 			say "[speech style of M]'Maybe later, little one!'[roman type][line break]";
-		otherwise if M is upright:
+		otherwise if M is not prone:
 			say "[speech style of M]'Get on your knees and I'll think about it!'[roman type][line break]";
 		otherwise if M is able to forcefeed:
 			say "The [M] smiles.  It looks like that's exactly what she had in mind.";
@@ -1366,7 +1366,7 @@ To compute unfriendly drink of (M - a gladiator):
 
 To compute desperate drinking to (M - a gladiator):
 	if M is male or the player is top heavy:
-		say "You spot a [M]! You [if the player is upright]drop to your knees and [end if]beg [him of M] to give you something to drink.";
+		say "You spot a [M]! You [if the player is not prone]drop to your knees and [end if]beg [him of M] to give you something to drink.";
 		compute unfriendly drink of M;
 	otherwise:
 		if the player is a flatchested trap:

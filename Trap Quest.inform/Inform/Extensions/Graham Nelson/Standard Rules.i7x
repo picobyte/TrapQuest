@@ -1729,8 +1729,7 @@ Check an actor dropping (this is the can't drop clothes being worn rule):
 		silently try the actor trying taking off the noun;
 		if the actor is wearing the noun, stop the action;
 
-Check an actor dropping (this is the can't drop if this exceeds carrying
-	capacity rule):
+Check an actor dropping (this is the can't drop if this exceeds carrying capacity rule):
 	let H be the holder of the actor;
 	if H is a room, continue the action; [room floors have infinite capacity]
 	if H provides the property carrying capacity:

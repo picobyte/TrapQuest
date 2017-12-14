@@ -136,7 +136,7 @@ To compute (Y - a needle trap) injecting into (X - belly):
 
 To compute (Y - a needle trap) injecting into (X - hips):
 	let needle-blocker be nothing;
-	if the player is upright:
+	if the player is not prone:
 		let R be a random number between 1 and 3;
 		repeat with C running through worn skirted clothing:
 			if R is 3, now needle-blocker is C;

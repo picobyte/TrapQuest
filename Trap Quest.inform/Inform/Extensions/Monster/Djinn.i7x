@@ -93,7 +93,7 @@ To compute perception of (M - a djinn):
 		say "The [M] notices you[if the player is sluttily dressed].[otherwise]![end if][line break][speech style of M]'[one of]Whore, your holes are required.'[or]You look like a [tasty] mortal.  Bow before me!'[or]Come here, young one.  This shaft isn't going to pleasure itself...'[in random order][roman type][line break]";
 		permanently anger M;
 	otherwise if M is unfriendly or the wish history of M is 1:
-		say "The [M] notices you[if the player is sluttily dressed].[otherwise]![end if][line break][speech style of M]'[one of]You again!  Did you think you'd been forgiven?  No, you will be my sex pet forever.'[or]Ah, perfect, I was just wondering where you had got to!'[or]You know the drill[if the player is upright].  Get on your knees[end if].'[stopping][roman type][line break][if the player is upright]He takes an aggressive stance.[end if]";
+		say "The [M] notices you[if the player is sluttily dressed].[otherwise]![end if][line break][speech style of M]'[one of]You again!  Did you think you'd been forgiven?  No, you will be my sex pet forever.'[or]Ah, perfect, I was just wondering where you had got to!'[or]You know the drill[if the player is not prone].  Get on your knees[end if].'[stopping][roman type][line break][if the player is not prone]He takes an aggressive stance.[end if]";
 		permanently anger M;
 	otherwise:
 		say "The [M] looks you up and down[if the player is sluttily dressed].[otherwise]![end if][line break]";
@@ -105,7 +105,7 @@ To compute DQ perception of (M - a djinn):
 		say "The [M] notices you[if the player is sluttily dressed].[otherwise]![end if][line break][speech style of M]'[one of]Oh look, a little baby.  Does someone need looking after?'[or]Oh it's the little baby again!  Back for more?'[or]Come here again, young one.'[stopping][roman type]  He looks aggressive!";
 		anger M;
 	otherwise if M is unfriendly:
-		say "The [M] notices you[if the player is sluttily dressed].[otherwise]![end if][line break][speech style of M]'[one of]You again!  Did you think you'd been forgiven?  No, you will suffer my wrath forever.'[or]Ah, perfect, I was just wondering where you had gotten to!'[or]You know the drill[if the player is upright].  Get on your knees[end if].'[stopping][roman type][line break][if the player is upright]He takes an aggressive stance.[end if]";
+		say "The [M] notices you[if the player is sluttily dressed].[otherwise]![end if][line break][speech style of M]'[one of]You again!  Did you think you'd been forgiven?  No, you will suffer my wrath forever.'[or]Ah, perfect, I was just wondering where you had gotten to!'[or]You know the drill[if the player is not prone].  Get on your knees[end if].'[stopping][roman type][line break][if the player is not prone]He takes an aggressive stance.[end if]";
 	otherwise:
 		say "The [M] looks you up and down[if the player is sluttily dressed].[otherwise]![end if][line break]";
 		compute appearance assessment of M.
@@ -249,7 +249,7 @@ This is the wishing for cock rule:
 		let M be a random djinn;
 		if M is interested friendly djinn and M is in the location of the player and the wish history of M is 0:
 			now the wish history of M is 2;
-			if the player is upright:
+			if the player is not prone:
 				try kneeling;
 				say "You open your mouth obediently.";
 			now the the player-reaction of the player is submitting;
@@ -266,7 +266,7 @@ This is the wishing for spanking rule:
 		let M be a random interested friendly djinn in the location of the player;
 		if M is monster:
 			now the wish history of M is 2;
-			if the player is upright:
+			if the player is not prone:
 				try kneeling;
 				say "You get on your knees obediently, raising your [buttcheeks] into the air.";
 			now the the player-reaction of the player is submitting;
@@ -521,7 +521,7 @@ To compute tripping attack of (M - a djinn):
 	if D >= the dexterity of the player and M is not-blinded:
 		say "[MonsterTrippedFlav of M]";
 		try kneeling;
-		if the player is prone, check attack of M;
+		if the player is not prone, check attack of M;
 	otherwise:
 		say "[MonsterFailedTripFlav of M]";
 		if M is blinded and a random number between 1 and 2 is 1:

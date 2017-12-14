@@ -105,7 +105,7 @@ To compute perception of (M - a matron):
 		say "[speech style of M]'[if the times-met of M < 1]Hey there you cute little thing.'[otherwise][one of]Oh it's my favourite big baby!'[or]Hi little baby potty pants!'[or]Don't you cry little one, Nanny is here to take care of you!'[in random order][end if][roman type][line break]";
 		compute diaper check of M;
 	otherwise if M is motherly:
-		say "[speech style of M]'Bad [if the player is a sissy]sissy[otherwise if the class of the player is maid]maid[otherwise if the class of the player is princess]princess[otherwise if the size of penis < 3]girl[otherwise]baby[end if]!  What did I say about not letting me find you without a nice snug nappy?!  You're in big trouble!  [if the player is upright]Get on your knees, now!'[otherwise]Hold still, now...'[end if][roman type][line break]";
+		say "[speech style of M]'Bad [if the player is a sissy]sissy[otherwise if the class of the player is maid]maid[otherwise if the class of the player is princess]princess[otherwise if the size of penis < 3]girl[otherwise]baby[end if]!  What did I say about not letting me find you without a nice snug nappy?!  You're in big trouble!  [if the player is not prone]Get on your knees, now!'[otherwise]Hold still, now...'[end if][roman type][line break]";
 		now the variety of M is 99;
 		anger M;
 	otherwise if there is an interested unfriendly wrestler in the location of M:
@@ -115,7 +115,7 @@ To compute perception of (M - a matron):
 		say "[speech style of M]'Oh my, you look so adorable in that uniform. But there[']s something we need to take care of before you can go off to school, now isn[']t there! Don[']t fight me sweety, I need to make sure you don[']t have any accidents in class.'[roman type][line break]";
 		now the variety of M is 99;
 	otherwise if diaper focus is 1 or the variety of M is 99:
-		say "[speech style of M]'Ooh, you're new!  And not diapered...  Well we can fix that right away!  [if the player is upright]Get on your knees, little one!'[otherwise]Stay right there...'[end if][roman type][line break]";
+		say "[speech style of M]'Ooh, you're new!  And not diapered...  Well we can fix that right away!  [if the player is not prone]Get on your knees, little one!'[otherwise]Stay right there...'[end if][roman type][line break]";
 		now the variety of M is 99;
  	otherwise:
 		say "[speech style of M]'[one of]Oh aren't you a pretty one!  Well I'm afraid I'm only here to help babies who can't handle grown up things like toilets on their own.  But if you ever do find yourself needing a diaper change, you know where to find me!'[or]Oh, it's you again!  Still feeling grown up enough to use the potty like a big girl?  Good for you!  Run along then, cutie!'[stopping][roman type][line break]".
@@ -167,7 +167,7 @@ To compute diaper check of (M - a matron):
 			otherwise say "[speech style of M]'Hmm, seems like you've managed to stay dry for now.  Well done my little darling!'[roman type][line break]";
 			FavourUp M by 1;
 			if M is unfriendly:
-				say "The [M] considers her options, her jutting breasts inches away from your face. Her [if lactation fetish is 1]full, engorged [end if]nipples [if the oral sex addiction of the player > 7]protruding from her shiny latex dress causes your mind to think of the feeling of your tongue running along a sweet delicious cock. [otherwise]protrude from her shiny latex dress. [end if][speech style of M]'Hmm, you don't need a change yet, but I think a naughty minx like you needs [if diaper quest is 0]feeding again, to make sure you're getting your nutrients[otherwise]some sort of discipline to keep you in line[end if]. [if the player is upright]Get on your knees, baby!'[otherwise]Come here...'[end if][roman type][line break]";
+				say "The [M] considers her options, her jutting breasts inches away from your face. Her [if lactation fetish is 1]full, engorged [end if]nipples [if the oral sex addiction of the player > 7]protruding from her shiny latex dress causes your mind to think of the feeling of your tongue running along a sweet delicious cock. [otherwise]protrude from her shiny latex dress. [end if][speech style of M]'Hmm, you don't need a change yet, but I think a naughty minx like you needs [if diaper quest is 0]feeding again, to make sure you're getting your nutrients[otherwise]some sort of discipline to keep you in line[end if]. [if the player is not prone]Get on your knees, baby!'[otherwise]Come here...'[end if][roman type][line break]";
 				if diaper quest is 0, say "[variable custom style][one of][if the diaper addiction of the player < 6]Oh my god! This woman is trying to force me to use my diaper![otherwise][second custom style]*Giggle* If she feeds me I'll get to use my diaper! Yay![end if][or][if the humiliation of the player < 25000]I can't let her do this to me! I can feed myself.[otherwise if the semen taste addiction of the player > 15]I hope she feeds me with a delicious cream pie from her pussy.[otherwise if the delicateness of the player > 10]At least if she feeds me I won't be hungry. [otherwise if the sex addiction of the player < 10 and the player is male]Maybe she'll have me eat some food off her hot body. [otherwise if lactation fetish is 1 and the milk taste addiction of the player > 6]I hope she feeds me by letting me suckle her giant breasts.[otherwise]I'm letting her treat me like a baby, how deliciously degrading![end if][in random order][roman type][line break]";
 	otherwise if M is unfriendly or M is motherly:
  		say "[speech style of M]'[one of]Didn't I tell you it's important for you to stay in diapers?  [if the player is prone]Stay on your knees[otherwise]Get on your knees[end if] and I'll fix that for you...'[or]How many times am I going to catch you out of nappies?  You're getting put in my naughty book for sure this time.'[or]Come on you naughty girl!  Time for your diaper.'[stopping][roman type][line break]";
@@ -179,7 +179,7 @@ To compute diaper check of (M - a matron):
 	otherwise if M is objectifying the player:
 		say "[speech style of M]'[one of]Hmm, you are pretty far gone, aren't you darling?  I think you need a bit of caring for, don't you hun?  [if the player is prone]Stay on your knees[otherwise]Get on your knees[end if] and I'll show you how I can help you.'[or]You definitely need my help again, don't you darling?'[stopping][roman type][line break]";
 		now the variety of M is 99;
-	if continued urination is 1 and the player is upright:
+	if continued urination is 1 and the player is not prone:
 		say "[if the humiliation of the player < 18000]The sheer humiliation of the situation[otherwise if the delicateness of the player < 10]Something about the way she is gripping your private parts[otherwise]Something deep inside of you feels comforted and[end if] makes your knees buckle.  You fall to the ground in front of the [M].";
 		try kneeling.
 

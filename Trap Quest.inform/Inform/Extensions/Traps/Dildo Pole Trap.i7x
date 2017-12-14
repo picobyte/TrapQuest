@@ -106,10 +106,9 @@ To trigger pole trap (Y - a dildo trap):
 			now the fainting reason of the player is 5;
 		otherwise:
 			say "A dildo on a pole shoots out of a trap door underneath you and narrowly misses your face.  Phew, that could have been quite ugly...";
-	if the player is mounted:
-		if the player is on a skippy ball:
-			say "A dildo on a pole [one of]shoots[or]ejects[at random] out of a trap door underneath you and ejects you.";
-			Bounce Bigtime;
+	if the player is on a skippy ball:
+		say "A dildo on a pole [one of]shoots[or]ejects[at random] out of a trap door underneath you and ejects you.";
+		Bounce Bigtime;
 	otherwise:
 		now Y is not untriggered;
 		now Y is revealed;

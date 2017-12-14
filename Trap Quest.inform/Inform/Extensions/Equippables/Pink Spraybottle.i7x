@@ -108,10 +108,10 @@ To compute spraybottle punishment:[Punishments: buttplug + bucket + vibrator]
 				say "You shriek as it cascades over you, soaking your clothes and stinging your skin.";
 				repeat with C running through worn currently uncovered fluid vulnerable clothing:
 					WaterSoak 1 on C;
-				if the fatigue of the player > the tired threshold of the player:
-					say "[if the player is not prone]Its so jarring you instantly fall to your knees.[end if]";
+				if the player is not prone and the fatigue of the player > the tired threshold of the player:
+					say "Its so jarring you instantly fall to your knees.";
 					silently try kneeling;
-				say "You [if the player is prone]stay[otherwise]stand[end if] there, shivering in place, from the cold.";
+				say "You [stayDesc] there, shivering in place, from the cold.";
 				if the make-up of face > 0 and permanent makeup is 0:
 					say "[if the make-up of face > 1]Some of your[otherwise]Your[end if] make up is washed away.";
 					FaceDown 1;

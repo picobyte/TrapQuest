@@ -261,32 +261,38 @@ Definition: yourself is squirming:
 	if there is an insertable object penetrating a fuckhole, decide yes;
 	decide no.
 
+[!<SayMovementDesc>+
+
+REQUIRES COMMENTING
+
++!]
 To say movementDesc:
-	if the player is upright:
-		say "walk";
-	if the player is crawling:
-		say "crawl";
+	if the player is upright, say "walk";
+	if the player is crawling, say "crawl";
 	if the player is mounted:
-		if the player is on a skippy ball:
-			say "bounce";
+		if the player is on a skippy ball, say "bounce";
 
+[!<SayMovementDesc>+
+
+REQUIRES COMMENTING
+
++!]
 To say movingDesc:
-	if the player is upright:
-		say "walking";
-	if the player is crawling:
-		say "crawling";
+	if the player is upright, say "walking";
+	if the player is crawling, say "crawling";
 	if the player is mounted:
-		if the player is on a skippy ball:
-			say "bouncing";
+		if the player is on a skippy ball, say "bouncing";
 
+[!<SayMovedDesc>+
+
+REQUIRES COMMENTING
+
++!]
 To say movedDesc:
-	if the player is upright:
-		say "walked";
-	if the player is crawling:
-		say "crawled";
+	if the player is upright, say "walked";
+	if the player is crawling, say "crawled";
 	if the player is mounted:
-		if the player is on a skippy ball:
-			say "bounced";
+		if the player is on a skippy ball, say "bounced";
 
 
 [!<movementReductionFlavSaid:Integer>*

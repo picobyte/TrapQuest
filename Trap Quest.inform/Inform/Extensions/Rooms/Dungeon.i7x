@@ -141,7 +141,7 @@ Dungeon18 is an important labyrinth room.  The printed name of Dungeon18 is "Pan
 REQUIRES COMMENTING
 
 *!]
-Dungeon19 is a sandy labyrinth room.  The printed name of Dungeon19 is "Toilets".  "No matter what modern commodities you were imagining, that is not the reality of the toilet room. In truth, they were little more than holes in the ground leading to some kind of underground river that has long since gone stagnant. The smell is rather unpleasant[if the player is upright]; you fear that crouching anywhere near one of those holes would flood your nostrils with the foulest of stenches[end if].".  The shape of Dungeon19 is L1/0-0-0-0-1-1.  Dungeon19 is toilets.
+Dungeon19 is a sandy labyrinth room.  The printed name of Dungeon19 is "Toilets".  "No matter what modern commodities you were imagining, that is not the reality of the toilet room. In truth, they were little more than holes in the ground leading to some kind of underground river that has long since gone stagnant. The smell is rather unpleasant[if the player is not prone]; you fear that crouching anywhere near one of those holes would flood your nostrils with the foulest of stenches[end if].".  The shape of Dungeon19 is L1/0-0-0-0-1-1.  Dungeon19 is toilets.
 
 [!<dungeon20:LabyrinthRoom>*
 

@@ -2,7 +2,7 @@ Special Events by Monster Framework begins here.
 
 [Here we address the player being pissed on by an unknown entity.  But we keep the flavour neutral so it doesn't matter.]
 To FacePiss:
-	if the player is upright, try kneeling;
+	if the player is not prone, try kneeling;
 	if the player is not forced to drink urine and the player is not gagged, say "Do you drink the [urine]? [yesnolink] ";
 	if the player is gagged:
 		compute urine hitting face;
@@ -882,7 +882,7 @@ To compute racial submission to (M - a monster):
 		if the player is a tit slut and M is male and M is willing to do titfucks and breasts are actually presentable, now B is breasts;
 		if the sensitivity of breasts > 7 and there is a worn nipple chain and M is male and M is willing to do titfucks, now B is breasts;
 		if B is body part:
-			say "[one of]For some reason you[or]You once again[stopping] can't help but [if the player is upright]drop to your knees and [end if][if B is body part]present yourself[otherwise]beg for [his of M] [manly-penis][end if].";
+			say "[one of]For some reason you[or]You once again[stopping] can't help but [if the player is not prone]drop to your knees and [end if][if B is body part]present yourself[otherwise]beg for [his of M] [manly-penis][end if].";
 			now auto is 0;
 			try kneeling;
 			if the player is prone, try direct-presenting B to M.

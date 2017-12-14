@@ -168,7 +168,7 @@ To compute perception of (M - a dominatrix):
 			otherwise say "The [M] smirks.  [speech style of M]'Ah, found you.  I'm ready for another session, and that means you are too[if the disappointment of M > 1].  Do you like my new strap-on?'[otherwise].'[end if][roman type][line break]";
 		otherwise if M is objectifying the player:
 			anger M;
-			say "The [M] stares at you with intimidating eyes.  [speech style of M]'Yes, you'll do fine.  [if the player is upright]Get on your knees[otherwise]I can tell by your crawling that you are a natural submissive[end if].'[roman type][line break]";
+			say "The [M] stares at you with intimidating eyes.  [speech style of M]'Yes, you'll do fine.  [if the player is not prone]Get on your knees[otherwise]I can tell by your crawling that you are a natural submissive[end if].'[roman type][line break]";
 		otherwise:
 			say "The [M] glances at you.  [speech style of M]'You're not my type. I'm looking for a proper submissive.'[roman type][line break]She seems to immediately lose interest.";
 		if the disappointment of M > 1, now the disappointment of M is 0.

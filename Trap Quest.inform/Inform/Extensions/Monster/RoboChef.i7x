@@ -220,7 +220,7 @@ To compute answer of (M - a robochef):
 	if the class of the player is maid:
 		say "[first custom style]'GET BACK TO WORK.'[roman type][line break]";
 	otherwise if M is unfriendly:
-		say "[first custom style]'PLEASE [if the player is upright]KNEEL[otherwise]WAIT[end if], DINNER MUST FIRST BE PREPARED.'[roman type][line break]";
+		say "[first custom style]'PLEASE [if the player is not prone]KNEEL[otherwise]WAIT[end if], DINNER MUST FIRST BE PREPARED.'[roman type][line break]";
 	otherwise:
 		say "[first custom style]'PLEASE ASK THE BUTLER FOR ASSISTANCE, [robogreeting].'[roman type][line break]".
 

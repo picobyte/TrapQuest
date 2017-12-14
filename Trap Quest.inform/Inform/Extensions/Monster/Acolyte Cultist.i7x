@@ -406,7 +406,7 @@ To compute unfriendly drink of (M - an acolyte):
 
 To compute desperate drinking to (M - an acolyte):
 	if the player-class is not cultist:
-		say "You spot a [M]! You [if the player is upright]drop to your knees and [end if]beg [him of M] to give you something to drink.";
+		say "You spot a [M]! You [if the player is not prone]drop to your knees and [end if]beg [him of M] to give you something to drink.";
 		compute unfriendly drink of M;
 	otherwise:
 		say "[if M is uninterested]You spot a [M]!  You beg her[otherwise]You can't control yourself - you beg the [M][end if] to give you something to drink.  She nods and pulls out a small cup of amber liquid.  You snatch it from her and down it in one.  You feel much less thirsty, but you somehow feel empty inside. The cultist nods at you and turns away.";

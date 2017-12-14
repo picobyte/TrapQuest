@@ -103,7 +103,7 @@ To compute furniture resting on (M - a milking bench):
 	if there is worn temporarily-displaced clothing:
 		say "You replace your [ShortDesc of list of worn temporarily-displaced clothing].";
 	repeat with C running through temporarily-displaced clothing:
-		if C is worn and the player is upright:
+		if C is worn and the player is not prone:
 			now C is top-placed;
 		now C is not temporarily-displaced;
 	now resting is 0.

@@ -113,7 +113,7 @@ To compute perception of (M - a mannequin):
 		otherwise:
 			bore M;
 	otherwise if the player is a bit horny:
-		if a random number between 5 and 25 < the anal sex addiction of the player and the player is not immobile and the player is upright and the player is not unable to orgasm so soon and the player is not flying:
+		if a random number between 5 and 25 < the anal sex addiction of the player and the player is not immobile and the player is not prone and the player is not unable to orgasm so soon and the player is not flying:
 			say "You look at the [M] and feel a burning desire to have an orgasm milked out of you[if the latex-transformation of the player > 3], even though you know it won't work[end if].  In this moment of weakness, you drop to your knees and look at the [M] expectantly.";
 			try kneeling;
 			if the player is not ass protected, now presented-orifice is asshole;

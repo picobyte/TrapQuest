@@ -86,7 +86,7 @@ To say ClothesPeeReaction of (M - a royal guard):
 		if M is friendly:
 			say "The [M] frowns.  [speech style of M]'What are you doing?!  It looks to me like you need diapers, little girl.  I am very unimpressed.'[roman type][line break]";
 			FavourDown M by 2;
-			if M is unfriendly, say "[speech style of M]'Yes in fact, I think you need training.  [if the player is upright]Get on your knees[otherwise]Stay right where you are[end if], baby!'[roman type][line break]";
+			if M is unfriendly, say "[speech style of M]'Yes in fact, I think you need training.  [if the player is not prone]Get on your knees[otherwise]Stay right where you are[end if], baby!'[roman type][line break]";
 		otherwise:
 			say "The [M] frowns angrily.  [speech style of M]'This is why you need to be in diapers!'[roman type][line break][if M is uninterested]Uh-oh...[end if]";
 			now M is interested;
@@ -94,7 +94,7 @@ To say ClothesPeeReaction of (M - a royal guard):
 		if M is friendly:
 			say "The [M] frowns.  [speech style of M]'What are you doing?!  Is that any way to keep polite company?!'[roman type][line break]";
 			FavourDown M by 2;
-			if M is unfriendly, say "[speech style of M]'I'm going to make you pay for your disgusting behaviour.  [if the player is upright]Get on your knees[otherwise]Stay right where you are[end if], baby!'[roman type][line break]";
+			if M is unfriendly, say "[speech style of M]'I'm going to make you pay for your disgusting behaviour.  [if the player is not prone]Get on your knees[otherwise]Stay right where you are[end if], baby!'[roman type][line break]";
 		otherwise:
 			say "The [M] frowns angrily.  [speech style of M]'You are an utter disgrace!'[roman type][line break][if M is uninterested]Uh-oh...[end if]";
 			now M is interested.
@@ -1178,7 +1178,7 @@ To say FirstResponse of (M - a royal guard):
 	
 To say RepeatResponse of (M - a royal guard):
 	if the class of the player is princess and M is unfriendly:
-		say "[speech style of M]'[one of]Forgive me, but I cannot control my urges any longer!'[or]Any princess knows that her true duty is to her kingdom.' [if the player is upright]Kneel!'[otherwise]Stay where you are!'[end if][at random][roman type][line break]";
+		say "[speech style of M]'[one of]Forgive me, but I cannot control my urges any longer!'[or]Any princess knows that her true duty is to her kingdom.' [if the player is not prone]Kneel!'[otherwise]Stay where you are!'[end if][at random][roman type][line break]";
 	otherwise if the class of the player is princess:
 		say "[speech style of M]'[one of]As always, the pleasure is mine.'[or]I am at your service, my liege.'[or]It is a pleasure to serve your crown, princess.'[at random][roman type][line break]";
 	otherwise if the class of the player is royal slave and M is unfriendly:
@@ -1212,7 +1212,7 @@ To say DominantResponse of (M - a royal guard):
 			say "[speech style of M]'[one of]I will use your body whether you like it or not!'[or]Your body is mine to use as I see fit!'[or]Perhaps next time you will think before you provoke me!'[at random][roman type][line break]";
 		otherwise:
 			say "[speech style of M]'[one of]Ha. Your enthusiasm is almost appalling. I will enjoy using you.'[or]I'm glad you've finally realized your place.'[or]Like a true whore you accept your place.'[or]That's a good whore. Now, it is time you sated  my urges.'[at random]";
-			if the player is upright:
+			if the player is not prone:
 				say "[one of]Kneel before me!'[or]Kneel!'[or]I am ordering you to kneel!'[or]My order is to kneel!'[at random][roman type][line break]";
 			otherwise:
 				say "[one of]Offer yourself to me!'[or]Submit!'[or]I order you to submit!'[or]Submit to me!'[at random][roman type][line break]";
@@ -1319,7 +1319,7 @@ To compute unfriendly drink of (M - a royal guard):
 	if M is penetrating a fuckhole:
 		say "[speech style of M]'I would, but you see, I'm a bit too busy filling your other end!'[roman type]";
 	otherwise if face is not actually occupied and (the semen taste addiction of the player > 6 or the humiliation of the player > 16000 or the thirst of the player is 5):
-		say "[if the thirst of the player is 5 and the player is upright]You are so thirsty that you drop to your knees and beg.[otherwise if the thirst of the player is 5]You are so thirsty that you beg [him of M] find any way to quench your thirst.  [otherwise if the player is upright]You drop to your knees and beg. [end if]";
+		say "[if the thirst of the player is 5 and the player is not prone]You are so thirsty that you drop to your knees and beg.[otherwise if the thirst of the player is 5]You are so thirsty that you beg [him of M] find any way to quench your thirst.  [otherwise if the player is not prone]You drop to your knees and beg. [end if]";
 		now the stance of the player is 1;
 		now M is interested;
 		compute M entering mouth;
@@ -1330,7 +1330,7 @@ To compute unfriendly drink of (M - a royal guard):
 	say "[line break]".
 
 To compute desperate drinking to (M - a royal guard):
-	say "You spot a [M]! You [if the player is upright]drop to your knees and [end if]beg [him of M] to give you something to drink.[line break]";
+	say "You spot a [M]! You [if the player is not prone]drop to your knees and [end if]beg [him of M] to give you something to drink.[line break]";
 	if M is unfriendly or the favour of M < the bimbo of the player:
 		now M is interested;
 		anger M;

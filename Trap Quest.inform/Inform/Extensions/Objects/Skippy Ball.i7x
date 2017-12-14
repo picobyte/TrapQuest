@@ -2,13 +2,21 @@ Skippy Ball by Objects begins here.
 
 Include Rideable Vehicles by Graham Nelson. [a rideable vehicle because we want to say that the player is on it rather than in it.]
 
-The skippy ball is a kind of rideable vehicle. It is portable and pushable between rooms. The carrying capacity is always 1. A skippy dildo is a kind of dong. It is scenery. It is part of every skippy ball. There is 1 skippy ball. The text-shortcut of skippy ball is "skpb". Understand "skippy" as the skippy ball. The skippy ball can be glue-stuck. The skippy ball is usually not glue-stuck. The skippy ball has a number called stickiness. The stickiness of the player is usually 0.
+The skippy ball is a kind of rideable vehicle. It is portable and pushable between rooms. The carrying capacity is always 999. A skippy dildo is a kind of dong. It is scenery. It is part of every skippy ball. There is 1 skippy ball. The text-shortcut of skippy ball is "skpb". Understand "skippy" as the skippy ball. The skippy ball can be glue-stuck. The skippy ball is usually not glue-stuck. The skippy ball has a number called stickiness. The stickiness of the player is usually 0.
 
 Does the player mean getting off the skippy ball when the player is on a skippy ball:
 	It is very likely.
 
 [Does the player mean getting on the skippy ball when there is a skippy ball:
 	It is likely.]
+
+[ammended from: $8.4. Furniture, Example Swigmore U. ]
+The spatial dropping rule is listed instead of the standard dropping rule in the carry out dropping rulebook.
+This is the spatial dropping rule:
+	if the player is on a rideable vehicle (called S) and the carrying capacity of S is 999:
+		move the noun to the holder of S;
+	otherwise:
+		move the noun to the holder of the player.
 
 Check an actor entering the skippy ball:
 	if the player is staggering, say "You[']re bound to fall over with the size of your belly. " instead;

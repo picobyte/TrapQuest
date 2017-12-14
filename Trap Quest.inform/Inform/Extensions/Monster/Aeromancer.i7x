@@ -147,7 +147,7 @@ To compute perception of (M - an aeromancer):
 		anger M;
 		if image cutscenes is 1, display figure of aeromancer interact 10;
 	otherwise if M is unfriendly:
-		say "The [M] notices you[if the player is sluttily dressed].[otherwise]![end if][line break][speech style of M]'[one of]Hi again!  Guess what time I've just decided it is?'[or]Ah, perfect, I was just wondering where my favourite test subject had got to!'[or]Sweet, there you are.  I thought I'd scared you off!'[in random order][roman type][line break][if the player is upright]She takes an aggressive stance.[end if]";
+		say "The [M] notices you[if the player is sluttily dressed].[otherwise]![end if][line break][speech style of M]'[one of]Hi again!  Guess what time I've just decided it is?'[or]Ah, perfect, I was just wondering where my favourite test subject had got to!'[or]Sweet, there you are.  I thought I'd scared you off!'[in random order][roman type][line break][if the player is not prone]She takes an aggressive stance.[end if]";
 		if image cutscenes is 1, display figure of aeromancer interact 12;
 	otherwise if the player is in danger or there is a live thing penetrating a body part:
 		say "The [M] notices you[if the player is sluttily dressed]! [otherwise]. [end if][speech style of M]'Fascinating! I'll be back!'[roman type]  [Big he of M] turns to leave you alone."; [###Selkie: The surprise (!) seems more appropriate for the slutty-dressed branch, I think. So I swapped them.]
@@ -512,7 +512,7 @@ To compute tripping attack of (M - an aeromancer):
 	if D >= the dexterity of the player and M is not-blinded:
 		say "[MonsterTrippedFlav of M]";
 		try kneeling;
-		if the player is prone, check attack of M;
+		if the player is not prone, check attack of M;
 	otherwise:
 		say "[MonsterFailedTripFlav of M]";
 		if M is blinded and a random number between 1 and 2 is 1:

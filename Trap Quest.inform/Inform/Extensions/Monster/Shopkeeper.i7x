@@ -94,14 +94,14 @@ To say FloorPeeReaction of (M - a shopkeeper):
 	if the player is in Dungeon41:
 		if diaper quest is 1:
 			if M is friendly:
-				say "The [M] looks furious.  [speech style of M]'What are you doing?!  This is a shop, not a toilet!  [if the player is upright]Get on your knees[otherwise]Stay right where you are[end if], you clearly need to be diapered and punished!'[roman type][line break]";
+				say "The [M] looks furious.  [speech style of M]'What are you doing?!  This is a shop, not a toilet!  [if the player is not prone]Get on your knees[otherwise]Stay right where you are[end if], you clearly need to be diapered and punished!'[roman type][line break]";
 				anger M;
 			otherwise:
 				say "The [M] frowns angrily.  [speech style of M]'This is why you need to be in diapers!'[roman type][line break][if M is uninterested]Uh-oh...[end if]";
 				now M is interested;
 		otherwise:
 			if M is friendly:
-				say "The [M] looks furious.  [speech style of M]'What are you doing?!  This is a shop, not a toilet!  [if the player is upright]Get on your knees[otherwise]Stay right where you are[end if], I'm going to make you wish you never stepped foot in here!'[roman type][line break]";
+				say "The [M] looks furious.  [speech style of M]'What are you doing?!  This is a shop, not a toilet!  [if the player is not prone]Get on your knees[otherwise]Stay right where you are[end if], I'm going to make you wish you never stepped foot in here!'[roman type][line break]";
 				anger M;
 			otherwise:
 				say "The [M] frowns angrily.  [speech style of M]'You are an utter disgrace!'[roman type][line break][if M is uninterested]Uh-oh...[end if]";

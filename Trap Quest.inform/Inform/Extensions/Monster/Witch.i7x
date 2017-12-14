@@ -246,7 +246,7 @@ This is the witch summons cursed clothing rule:
 The witch summons cursed clothing rule is listed last in the witch attack rules.
 
 This is the witch tries to trip the player rule:
-	if the player is upright and the player is not immobile:
+	if the player is not prone and the player is not immobile:
 		compute tripping attack of current-monster;
 		rule succeeds.
 The witch tries to trip the player rule is listed last in the witch attack rules.

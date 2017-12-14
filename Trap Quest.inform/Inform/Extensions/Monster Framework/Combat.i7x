@@ -982,7 +982,7 @@ To say UrinationFlav of (M - a monster):
 Chapter 6 Damaging and Tripping
 
 This is the monster attack rule:
-	if the player is upright:
+	if the player is not prone:
 		follow the attack rules of current-monster.
 		[if the rule succeeded, rule succeeds.] [By commenting this out, this means that the monster gets to go straight to punishment if the player drops.]
 The monster attack rule is listed last in the monster attack rules. [Listed 5th]

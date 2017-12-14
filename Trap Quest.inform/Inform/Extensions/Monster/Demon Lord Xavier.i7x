@@ -90,7 +90,7 @@ To compute perception of (M - a demon lord):
 		say "[first custom style]'CONCUBINE! I HAVE PREPARED A GIFT FITTING YOUR STATUS!'[roman type]";
 	otherwise:
 		say "[first custom style]'YOU!  GET ON YOUR KNEES AND PRESENT [if pregnancy fetish is 1 and the player is female and the pregnancy of the player is 0]YOUR CUNT TO CONCEIVE AND CARRY MY HEIR[otherwise]YOURSELF BEFORE YOUR [one of]NEW [or][stopping]MASTER[end if].'[roman type][line break]";
-		if the player-class is succubus and the player is upright:
+		if the player-class is succubus and the player is not prone:
 			say "Your master's voice is too commanding for you to even consider resistance!";
 			try kneeling.
 

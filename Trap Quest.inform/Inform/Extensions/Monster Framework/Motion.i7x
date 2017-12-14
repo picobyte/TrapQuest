@@ -100,7 +100,7 @@ This is the monster notices the player urinating rule:
 			say GroundPeeDeclaration of current-monster;
 		if current-monster is unfriendly and current-monster is uninterested:
 			now current-monster is interested;
-			say "The [current-monster] looks [if the player is upright]like [he of current-monster] wants to fight[otherwise]aggressive[end if]!".
+			say "The [current-monster] looks [if the player is not prone]like [he of current-monster] wants to fight[otherwise]aggressive[end if]!".
 The monster notices the player urinating rule is listed in the motion reaction rules.
 
 To compute monster sleeping:
