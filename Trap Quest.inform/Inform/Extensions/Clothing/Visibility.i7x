@@ -82,7 +82,7 @@ To decide which object is the concealer of (C - a clothing):
 
 To decide which object is the concealer of (K - a diaper):
 	repeat with C running through worn potentially asshole covering clothing:
-		if (C is knee-length or (C is short and the player is upright)) and C is crotch-in-place, decide on C; [only skirts can hide diapers, everything else it's still clear what you're wearing.]
+		if (C is knee-length or (C is short and the player is not prone)) and C is crotch-in-place, decide on C; [only skirts can hide diapers, everything else it's still clear what you're wearing.]
 	decide on nothing.
 
 To decide which object is the concealer of (S - a sex toy):

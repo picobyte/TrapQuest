@@ -111,7 +111,7 @@ Definition: a clothing (called C) is potentially penis covering:[does not check 
 	if C is skirted clothing:
 		if the number of worn crotch-in-place undies > 0, decide yes;[your penis is propped up, so it's concealed by all skirts.]
 		if C is not super-short and C is not short, decide yes; [long skirts protect against exposure]
-		if the player is upright and C is not super-short and the size of penis < 4, decide yes; [short skirts protect against exposure as long as you're standing and have a small penis]
+		if the player is not prone and C is not super-short and the size of penis < 4, decide yes; [short skirts protect against exposure as long as you're standing and have a small penis]
 	decide no.
 
 [!<ClothingIsActuallyPenisCovering>+

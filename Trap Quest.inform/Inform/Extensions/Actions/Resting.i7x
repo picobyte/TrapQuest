@@ -17,7 +17,7 @@ Check resting:
 	if the player is monster fucked, try resisting instead;
 	if the player is immobile, say "Aren't you a bit busy?" instead;
 	if the fatigue of the player is 0, say "[if the body soreness of the player is 0]You feel completely fine.[otherwise]You're not fatigued at the moment, just injured.  You're going to need to find somewhere specific to rest to heal your injuries.[end if]" instead;
-	if the player is upright, say "You can only rest while kneeling." instead;
+	if the player is not prone, say "You can only rest while kneeling." instead;
 	say "Stay still until you feel completely refreshed? [yesnolink] ";
 	unless the player consents, say "You change your mind." instead.
 
@@ -27,7 +27,7 @@ REQUIRES COMMENTING
 
 +!]
 Carry out resting:
-	if the player is upright, try kneeling;
+	if the player is not prone, try kneeling;
 	now the alert of the player is 0;
 	while the fatigue of the player > 0 and the alert of the player is 0:
 		say  "You [one of][or]continue to [stopping][if the largeness of breasts > 13]use your [BreastDesc] as pillows to [end if]rest.";

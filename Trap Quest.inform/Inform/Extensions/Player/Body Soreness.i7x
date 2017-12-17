@@ -17,8 +17,8 @@ To bodyruin (X - a number):
 		now X is 0;
 		say "You have no flesh so don't get any more sore.";
 		if the number of unfriendly interested monsters in the location of the player > 0:
-			if the player is upright:
-				say "But you are so light that the force of the blow knocks you to your knees!";
+			if the player is not prone:
+				say "But you are so light that the force of the blow knocks you [if the player is on a skippy ball]off the skippy ball[otherwise]to your knees[end if]!";
 				try kneeling;
 				[if the player is prone, say "[bold type]You are now on your knees.[roman type][line break]";]
 	while X > 0:

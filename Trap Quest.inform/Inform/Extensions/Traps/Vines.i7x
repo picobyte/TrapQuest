@@ -119,8 +119,9 @@ REQUIRES COMMENTING
 
 +!]
 To compute (V - a vine) penetrating:
-	let H be a random number from 1 to 14;
-	if the player is prone, now H is 14;
+	let H be 14;
+	if the player is is on a skippy ball, now H is 7;
+	if the player is not prone, now H is a random number from 1 to H;
 	let R be a random number between 1 and 2;
 	if the player is a butt slut or the player is male, now R is 1;
 	if the player is a pussy slut and the player is not a butt slut, now R is 2;

@@ -49,7 +49,7 @@ REQUIRES COMMENTING
 Carry out returning:
 	let X be the best route from the location of the player to Remembered Location through discovered rooms;
 	unless X is nothing:
-		say "You try to [if the player is upright]walk[otherwise]crawl[end if] [X].";
+		say "You try to [movementDesc] [X].";
 		try going X;
 	otherwise:
 		say "You can't work out how to get back there from where you currently are!".

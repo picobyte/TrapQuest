@@ -56,7 +56,7 @@ Check HoleEntering:
 	if the noun is warp portal, try entering the noun instead;
 	if the noun is not hole-in-wall, say "This verb is for entering holes in walls." instead;
 	if the player is immobile, say "You're currently immobile!" instead;
-	if the player is upright, say "You'd need to be on your knees." instead;
+	if the player is not prone, say "You'd need to be on your knees." instead;
 	[###Selkie: what about if the player is flying?] 
 	now seconds is 3;
 	if the largeness of breasts > 15, say "You try but your [MediumDesc of breasts] are just too big, you won't be able to fit through!" instead.

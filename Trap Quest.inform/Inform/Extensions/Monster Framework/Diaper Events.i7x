@@ -270,6 +270,9 @@ To compute diaper change of (M - a monster):
 		say "[DiaperChangeStart of M]";
 		now M is grabbing the player;
 		now M is changing the player;
+		if the player is on a skippy ball (called S):
+			say "[speech style of M]'You know you should stop bouncing that diaper when it's all messy.'[roman type] [if the stickiness of S > 0]With brute force [M] pulls you of the [S]. [end if]";
+			force off S;
 		now the stance of the player is 1; [Just in case a change is triggered while the player was standing.]
 		now old-diaper is nothing;
 		rule succeeds.

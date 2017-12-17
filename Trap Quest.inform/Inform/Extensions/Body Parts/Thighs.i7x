@@ -77,9 +77,9 @@ To say TotalDesc of thighs:
 	if the semen coating of thighs > 7:
 		say " that are completely caked in [if the semen addiction of the player < 6]nasty, [end if]slimy [semen].  ";
 	otherwise if the semen coating of thighs > 4:
-		say " that squelch together [if the semen addiction of the player < 6]horribly [end if]as you [if the player is upright]walk[otherwise]crawl[end if].  ";
+		say " that squelch together [if the semen addiction of the player < 6]horribly [end if]as you [movementDesc].  ";
 	otherwise if the semen coating of thighs > 0:
-		say " that have [semen] slowly trickling down them as you [if the player is upright]walk[otherwise]crawl[end if].  ".
+		say " that have [semen] slowly trickling down them as you [movementDesc].  ".
 
 Part 3 - Modify Thighs Stats
 

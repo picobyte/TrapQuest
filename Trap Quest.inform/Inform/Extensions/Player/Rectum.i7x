@@ -37,14 +37,13 @@ To compute scene messing:
 					now diaper-scene-unhandled is 1;
 					compute messing;
 			otherwise:
-				say "[bold type][if the player is upright]As you stand there[otherwise]As you rest on your hands and knees[end if] you start to realise there is a squishy feeling growing between your butt cheeks.  You stop in shock as you realise you're messing yourself[one of][or] again[stopping]![roman type][line break][MatronResponsible]";
+				say "[bold type][if the player is not prone]As you [stayDesc] here[otherwise]As you rest on your hands and knees[end if] you start to realise there is a squishy feeling growing between your butt cheeks.  You stop in shock as you realise you're messing yourself[one of][or] again[stopping]![roman type][line break][MatronResponsible]";
 				now diaper-scene-unhandled is 1;
 				compute messing;
 		otherwise if rectum + the incontinence of the player < a random number between 5 and 10:
 			say "Your tummy rumbles ominously[one of].  Something tells you that you should return to the hotel sooner rather than later...[or].[stopping]";
 		otherwise:
-			say "Your tummy cramps [if rectum < 10]painfully[otherwise]brutally[end if][if the player is upright], forcing you onto your knees[end if].  You feel a burning need to find the [M].";
-			try kneeling;
+			say "Your tummy cramps [if rectum < 10]painfully[otherwise]brutally[end if][kneeForcing].  You feel a burning need to find the [M].";
 			if rectum >= 10:
 				say "It takes you several moments to recover.";
 				now another-turn is 1.
@@ -84,8 +83,7 @@ To compute real messing:
 			summon D cursed;
 			say "a [ShortDesc of D]![one of][line break][variable custom style][if the delicateness of the player < 14]Oh my god, the game is trying to make me mess myself...[otherwise]At least now I have a toilet to go in.  Thank you game![end if][roman type][line break][or][stopping]";
 		otherwise if suppository > 0 or a random number between 1 and 5 is 1:
-			say "Your tummy cramps [if rectum + suppository < 8]painfully[otherwise]brutally[end if][if the player is upright], forcing you onto your knees[end if].  You feel a desperate need to find [if the diaper addiction of the player < 12]a toilet[otherwise]a diaper[end if].";
-			try kneeling;
+			say "Your tummy cramps [if rectum + suppository < 8]painfully[otherwise]brutally[end if][kneeForcing].  You feel a desperate need to find [if the diaper addiction of the player < 12]a toilet[otherwise]a diaper[end if].";
 			if rectum + suppository >= 8:
 				say "It takes you several moments to recover.";
 				now another-turn is 1.
@@ -144,6 +142,9 @@ To compute messing:
 		anger M;
 		now M is grabbing the player;
 		now M is changing the player;
+		if the player is on a skippy ball (called S):
+			say "[speech style of M]'You know you shouldn't keep riding your skippy when you're all messy down there.'[roman type] [if the stickiness of S > 0]With brute force [M] pulls you of the [S]. [end if]";
+			force off S;
 		now the stance of the player is 1;
 		let C be a random worn crotch covering clothing;
 		now C is a random worn top level protection clothing; [Top level takes priority]
@@ -195,8 +196,6 @@ To compute messing:
 To compute unhandled diaper scene:
 	if diaper lover is 3 and there is worn messed knickers and the number of changing the player monsters is 0:
 		say "[variable custom style][if the diaper addiction of the player < 7 and voluntary-messing is 0]How did I let this happen?![otherwise if the diaper addiction of the player < 12]Am I really just as pathetic as an incontinent child now?[otherwise if the diaper addiction of the player < 15]I can't believe how good that felt...[otherwise]Uh-oh, I did a naughty thing[one of]!  But it was so fun[or]again, and that means I get a change!  Yay[stopping]![end if][roman type][line break]";
-		now the stance of the player is 1;
-		say "[run paragraph on] [bold type]You are now on your knees.[roman type][line break]";
 		let M be a random alive royal guard;
 		if the player is in the hotel:
 			now M is a random alive matron;
@@ -217,6 +216,11 @@ To compute unhandled diaper scene:
 		say "Suddenly you notice that the [M] is looming over you[if M is robot]![otherwise]!  [speech style of M]'What have we here?'[roman type][line break][end if]";
 		if M is royal guard and the player is not in the dungeon:
 			drag to Dungeon06 by M;
+		if the player is on a skippy ball (called S):
+			say "[speech style of M]'You know you shouldn't stay on your skippy when you're all messy down there!'[roman type] [if the stickiness of S > 0]With brute force [M] pulls you from the [S]. [end if]";
+			force off S;
+		now the stance of the player is 1;
+		say "[bold type]You sink to your knees.[roman type][line break]";
 		compute diaper change of M;
 	now diaper-scene-unhandled is 0.
 

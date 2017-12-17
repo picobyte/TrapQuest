@@ -37,6 +37,7 @@ REQUIRES COMMENTING
 
 +!]
 Check entering WoodsScenery01:
+	if the player is on a skippy ball, say "You need to get off the skippy ball for that. " instead;
 	try showering the noun instead.
 
 [!<CheckEnteringDungeonScenery03>+
@@ -45,6 +46,7 @@ REQUIRES COMMENTING
 
 +!]
 Check entering DungeonScenery03:
+	if the player is on a skippy ball, say "You need to get off the skippy ball for that. " instead;
 	try showering the noun instead.
 
 [!<CheckEnteringSacredPool>+
@@ -53,6 +55,7 @@ REQUIRES COMMENTING
 
 +!]
 Check entering sacred pool:
+	if the player is on a skippy ball, say "You need to get off the skippy ball for that. " instead;
 	try showering the noun instead.
 
 [!<CarryOutShoweringWoodsScenery01>+
@@ -61,7 +64,7 @@ REQUIRES COMMENTING
 
 +!]
 Carry out showering WoodsScenery01:
-	if seconds is 0, say "You [if the player is upright]enter[otherwise]crawl into[end if] the pool and wash yourself with the water.  ";
+	if seconds is 0, say "You [if the player is not prone]enter[otherwise]crawl into[end if] the pool and wash yourself with the water.  ";
 	let S be 0;
 	let X be 0;
 	now tracked-semen is 0;
@@ -104,7 +107,7 @@ REQUIRES COMMENTING
 
 +!]
 Carry out showering DungeonScenery03:
-	if seconds is 0, say "You [if the player is upright]enter[otherwise]crawl into[end if] the lake and wash yourself with the water.  ";
+	if seconds is 0, say "You [if the player is not prone]enter[otherwise]crawl into[end if] the lake and wash yourself with the water.  ";
 	now tracked-semen is 0;
 	let L be 0;
 	let X be 0;

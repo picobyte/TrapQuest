@@ -52,7 +52,7 @@ To compute class outfit of (H - a flower hairclip):
 				repeat with O running through worn bras:
 					say "Your [O] vanishes!";
 					destroy O;
-			say "[bold type]You are forced to [if the player is upright]stand[otherwise]stay[end if] still as a rigid metal chestpiece appears around you.  Somehow, you now feel more in control of your urges.[roman type][line break]";
+			say "[bold type]You are forced to [stayDesc] still as a rigid metal chestpiece appears around you.  Somehow, you now feel more in control of your urges.[roman type][line break]";
 			summon W cursed;
 			now the raw-magic-modifier of W is the virgin bonus of the player;
 			if warrior-summoned is 0, now warrior-summoned is 1;

@@ -272,6 +272,8 @@ To compute attack effect of (W - a notebook):[the effect of tear is going to be 
 		if D + (the tear of W * 2) > 20 and the tear of W > 0:
 			say "The book emits a sharp crack and sends a whizzing orb of energy careening into your chest. The wind is instantly knocked out of you and you collapse, shivering uncontrollably.";
 			FatigueUp 25;
+			if the player is on a skippy ball (called S):
+				force off S;
 			now the stance of the player is 1;[TODO: remember what effect was supposed to be here]
 		otherwise if D > 5 and a random number between 1 and the charge of W + 2 is 1:
 			say "[one of]The force of the attack partially singes the pages of the book![or][or][cycling]";

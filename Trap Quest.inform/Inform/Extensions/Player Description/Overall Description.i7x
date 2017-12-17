@@ -90,7 +90,7 @@ To say OptionalDescription:
 		if the player is vine fucked:
 			say "Vines are holding you still and fucking your [if the player is male][asshole]!  [otherwise][vagina]!  [end if]";
 		otherwise:
-			if the player is upright, say "Vines are holding your ankles still!  ";
+			if the player is not prone, say "Vines are holding your ankles still!  ";
 			otherwise say "Vines are holding your wrists and ankles down, keeping you on your knees.  ";
 	otherwise if the player is monster fucked:
 		say "The [random monster penetrating a body part] is [if diaper quest is 1]punishing you[otherwise][one of]having fun with your body[or]using your body as a playground[or]currently defiling your body[at random][end if].  ";

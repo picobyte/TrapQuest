@@ -134,7 +134,7 @@ Check dominating:
 		if asshole is actually occupied, say "You need to remove your [printed name of a random worn clothing penetrating asshole] first!" instead;	
 	if the delicateness of the player > 5 and the difficulty of the noun > 13 and the delicateness of the player > (the difficulty of the noun - the times-dominated of the noun) / 2, say "[He of the noun] looks way too tough for that. What if something went wrong...?" instead;[players with very high delicateness will be too afraid to try and dominate strong monsters unless they've already dominated them a few times before]
 	if the number of dangerous monsters in the location of the player > 1, say "You're outnumbered right now. You should try to find some place more secluded before trying something so bold." instead;
-	if the player is prone, say "That would be a little hard to do from your knees." instead;
+	if the player is not upright, say "That would be a little hard to do [if the player is prone]from your knees[otherwise]while you are mounted[end if]." instead;
 	unless the noun is interested:
 		say "The [noun] isn't even paying attention to you right now. Are you sure you want to start a fight?";
 		unless the player consents, do nothing instead.
@@ -158,7 +158,8 @@ Carry out dominating:
 	otherwise:[Value of 2? Player failed and is getting punished]
 		now M is interested;
 		unless M is unfriendly, anger M;[this handles edge cases where the player goes for a monster that isn't paying attention to the player.]
-		now the stance of the player is 1; [Does this *tell* the player they’ve fallen to their knees? MG says: The flavour should usually imply the player is on their knees, but specific functions can override that with DominanceFailure of M.]
+		if the player is upright:
+			now the stance of the player is 1; [Does this *tell* the player they’ve fallen to their knees? MG says: The flavour should usually imply the player is on their knees, but specific functions can override that with DominanceFailure of M.]
 		FatigueUp 50;
 		now player-fucking is 1;
 		say DominanceFailure of M;

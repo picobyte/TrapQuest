@@ -161,7 +161,7 @@ To compute SelfExamineDesc of (H - a heels):
 		say "You are [if the player is ankle bound]somehow managing to hobble along with[otherwise if the strut of the player is 1]strutting around provocatively in your[otherwise if the hindrance of H < 2]walking around confidently in your[otherwise]managing to balance on a[end if] [ShortDesc of H].  ";
 		if diaper quest is 0, say "[one of]Your [BreastDesc] [BreastBounceDesc] as you [if the player is ankle bound]mince in tiny steps[otherwise if the strut of the player is 1]strut[otherwise if the hindrance of H < 2]stride[otherwise]teeter[end if] through these [if the delicateness of the player  < 4]weird and disturbing places[otherwise]scary environs[end if].  [or][or][or][or][in random order]";
 	otherwise:
-		say "A [ShortDesc of H] are currently latched to your feet[if the player is ankle bound], and your ankles are bound close together making it difficult to crawl[end if].  ".
+		say "A [ShortDesc of H] are currently latched to your feet[if the player is ankle bound], and your ankles are bound close together making it difficult to [movementDesc][end if].  ".
 
 Report examining heels:
 	if newbie tips is 1, say "Heels [if the number of worn heels is 0]would [end if]allow you to deal higher amounts of damage with your kicks.".

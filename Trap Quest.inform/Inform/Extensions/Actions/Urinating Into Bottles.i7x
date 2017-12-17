@@ -23,7 +23,7 @@ Check PeeBottling:[TODO: compatible with parched pedestal]
 	if the player is live fucked, say "You're a bit busy right now!" instead;
 	if the humiliation of the player < 15000 and debugmode is 0, say "You consider yourself too dignified to do that right now.  Peeing on the floor would be humiliating enough." instead;
 	if there is worn pee covering clothing, say "If you peed right now, it'd be inside your [printed name of random worn pee covering clothing]." instead;
-	if the player is prone:
+	if the player is not upright:
 		say "If you peed right now, it'd be on the floor because you're not standing." instead;
 	if the doses of the noun > 0 and the fill-type of the noun is not 21:
 		say "Are you sure you wish to empty your [noun] of its current contents? [yesnolink] ";

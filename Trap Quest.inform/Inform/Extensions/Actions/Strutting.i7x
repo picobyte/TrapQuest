@@ -33,7 +33,7 @@ REQUIRES COMMENTING
 Check strutting:
 	if the strutskill of the player is 0 and there are no worn strut enabling clothing, say "You don't know this ability." instead;
 	if the strut of the player is 0 and 0 is the number of worn heels, say "You aren't wearing heels so you can't strut at the moment." instead;
-	if the player is prone, say "You can only change your walking mode whilst upright." instead;
+	if the player is not upright, say "You can only change your walking mode whilst upright." instead;
 	if the player is flying, say "You aren't even touching the ground!" instead;
 	if the class of the player is living sex doll, say "You don't have the muscles to control your body in such a specific way." instead;
 	if the player is waddling, say "You can't waddle and strut at the same time!" instead;

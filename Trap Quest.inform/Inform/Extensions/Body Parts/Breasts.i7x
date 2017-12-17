@@ -367,9 +367,9 @@ REQUIRES COMMENTING
 +!]
 To say TotalDesc of breasts:
 	say "You are ";
-	if the player is upright:
-		if the largeness of breasts < 11 or the latex-transformation of the player > 1, say "[if the throne is triggered or the player is horse stuck]sitting down[otherwise]standing up[end if] with [if the largeness of breasts is 1]a [end if]";
-		otherwise say "somehow managing to stand up with ";
+	if the player is not prone:
+		if the largeness of breasts < 11 or the latex-transformation of the player > 1, say "[if the throne is triggered or the player is horse stuck or the player is mounted]sitting down[otherwise]standing up[end if] with [if the largeness of breasts is 1]a [end if]";
+		otherwise say "somehow managing to [stayDesc] up with ";
 	otherwise:
 		if the largeness of breasts < 11 or the latex-transformation of the player > 1, say "on your knees, with [if the largeness of breasts is 1]a [end if]";
 		otherwise say "on your hands and knees under the weight of your ";	
@@ -377,6 +377,8 @@ To say TotalDesc of breasts:
 		say "[BreastDesc][BraDesc]";
 	otherwise if the player is prone:
 		say "[BreastDesc][BreastKneelingDesc]";
+	otherwise if the player is on a skippy ball:
+		say "[BreastDesc][BreastBouncingDesc]";
 	otherwise:
 		say "[BreastDesc][BreastStandingDesc]";
 	if lactation fetish is 1 or inflation fetish is 1 or artificial enhancements fetish is 1:
@@ -542,6 +544,35 @@ To say BreastStandingDesc:
 		if X is 9, say " that make it difficult to keep a straight back.  ";
 		if X is 10, say " that are ruining your posture.  ";
 		if X is 11, say " that bounce significantly as you walk, exaggerating all your movements.  ";
+		if X is 12, say " that threaten to make you lose your balance.  ";
+		if X is 13, say " that prevent you from seeing the ground in front of you.  ";
+		if X is 14, say " that you have to support with your arms to stop them from slapping against your stomach.  ";
+		if X is 15, say " that ache from their own weight pulling them down.  ";
+		if X is 16, say " that flail wildly as you move.  ";
+		if X is 17, say ", larger than any realistic cup size, that are in danger of smacking you in the face painfully if you jump.  ";
+		if X is 18, say " that make you look like a poorly drawn hentai girl, and are making you weak at the knees even when just standing still.  ";
+		if X is 19, say " that are almost forcing you onto your hands and knees with their weight.  ";
+		if X is 20, say " that threaten to tip you off your feet at any moment.  ";
+	otherwise:
+		say ".  ".
+
+[!<SayBreastBouncingDesc>+
+
+REQUIRES COMMENTING
+
++!]
+To say BreastBouncingDesc:
+	if the weight of breasts > the largeness of breasts:
+		let X be the largeness of breasts;
+		if the latex-transformation of the player > 2, now X is 100;
+		if X is 100, say " that bounce elastically as they protrude straight forward from your chest, [if the latex-transformation of the player < 5]as if they are[otherwise]as they are[end if] made of latex and filled with air.  ";
+		if X < 6, say ".  ";
+		if X is 6, say " that bump up and down as you bounce.  ";
+		if X is 7, say " that bounce around as you jump on the skippy ball.  ";
+		if X is 8, say " that sway up and down on your chest.  ";
+		if X is 9, say " that jounce with your chest as you move along.  ";
+		if X is 10, say " that keep hitting the skippy ball when you jump.  ";
+		if X is 11, say " that smack against the skippy ball, disturbing your balance.  ";
 		if X is 12, say " that threaten to make you lose your balance.  ";
 		if X is 13, say " that prevent you from seeing the ground in front of you.  ";
 		if X is 14, say " that you have to support with your arms to stop them from slapping against your stomach.  ";

@@ -7,7 +7,7 @@ A tripwire trap has a number called memory.  The memory of a tripwire trap is us
 To trigger (Y - a tripwire trap):
 	now Y is revealed;
 	now the memory of Y is 30;
-	if the player is upright and (the living belt of sturdiness is not worn or the living belt of sturdiness is cursed):
+	if the player is upright and the living belt of sturdiness is worn and the living belt of sturdiness is cursed:
 		say "The wire has no give at all, making you flail wildly as you fall to your knees!";
 		if the bimbo of the player < 14:
 			if a random number between 1 and 5 is 1, say "[variable custom style][one of]Well that was[or]Whoops, that was[or]Not again, how[then at random] embarrassing![roman type]";

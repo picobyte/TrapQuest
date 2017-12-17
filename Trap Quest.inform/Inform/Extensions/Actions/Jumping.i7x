@@ -10,6 +10,7 @@ REQUIRES COMMENTING
 Check jumping:
 	if the player is in Capsule, say "There's not enough space to jump while you're lying down in the capsule." instead;
 	if the player is in Start, say "Stop messing around and choose a gender!" instead;
+	if the player is on a skippy ball, say "Just tell me which way." instead;
 	if the player is prone, say "You can't jump while on all fours!" instead;
 	if the throne is triggered, say "You can't jump while sitting on the throne." instead;
 	if the player is vine stuck, say "Vines are pinning your ankles to the ground!  Try [bold type]pulling[roman type] them?" instead;

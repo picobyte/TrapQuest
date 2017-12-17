@@ -77,7 +77,7 @@ REQUIRES COMMENTING
 
 +!]
 Report taking:
-	if weight gain fetish is 1 and the player is upright:
+	if weight gain fetish is 1 and the player is not prone:
 		FatigueUp 10;
 		increase the fat-burning of hips by 10;
 		compute hip fat burning.
@@ -194,7 +194,7 @@ REQUIRES COMMENTING
 To say HipDesc:
 	say ShortDesc of hips;
 	if the total volume of hips is 14, say ", each one large larger than a watermelon";
-	if the total volume of hips is 15, say " that sway wildly as you [if the player is upright]walk[otherwise]crawl[end if]";
+	if the total volume of hips is 15, say " that sway wildly as you [movementDesc]";
 	if the total volume of hips is 16, say " that force you to waddle awkwardly[if the player is upright] as you walk[end if]";
 	if the total volume of hips > 16 and the total volume of hips < 20, say "[if the player is upright] that force you to walk with an exaggerated waddle[end if]";
 	if the total volume of hips is 20 and air volume of hips > 10:

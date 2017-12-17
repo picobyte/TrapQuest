@@ -44,7 +44,10 @@ Definition: yourself is mounted:
 	if the stance of it is 2, decide yes;
 	decide no.
 
-
+To say kneeForcing:
+	if the player is upright:
+		say ", [one of]forcing[or]which forces[at random] you [one of]onto[or]down on[at random] [one of]your hands and knees[or]your knees[or]all fours[at random]";
+		try kneeling.
 
 [!<resting:Integer>*
 

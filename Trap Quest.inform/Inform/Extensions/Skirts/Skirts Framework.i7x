@@ -64,7 +64,7 @@ Definition: a clothing (called C) is skirt-covering-crotch: [does it protect the
 	if C is skirted:
 		if C is super-short or C is crotch-assless, decide no; [tiny skirts don't protect anything]
 		if C is worn: [We only care about these checks if it's already worn; a kneeling player should still be happy to wear a short skirt because it CAN protected them once they stand back up]
-			if the player is prone and C is short, decide no; [short skirts don't protect you unless you're standing.]
+			if the player is prone and C is short, decide no; [short skirts don't protect you if you're crawling.]
 			if C is crotch-displaced or C is crotch-unzipped, decide no; [if it's raised up it is currently not covering stuff] 
 		if C is crotch covering and (C is no protection or C is pussy protection), decide no; [ripped hobble skirt, or crotch only]
 		decide yes;

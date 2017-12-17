@@ -33,6 +33,7 @@ Check squatting:
 	if the total squirtable fill of belly <= 0, say "You don't have any liquid[if egg laying fetish is 1] or eggs[end if] in your belly." instead;
 	if asshole is actually occupied, say "The [random thing penetrating asshole] is plugging your [asshole], so this will do nothing!" instead;
 	if the latex-transformation of the player > 4, say "Your doll-like butthole's one way valve doesn't let you expel stuff on demand." instead; 
+	if the player is on a skippy ball, say "You need to get of the skippy ball for that." instead;
 	if there is an enema-filling the player monster, say "You can't do that while the [random enema-filling the player monster] is still administering your enema!" instead;
 	if the humiliation of the player < public-squatting-limit:
 		if there is an intelligent awake monster in the location of the player and the diaper addiction of the player < 17:

@@ -41,7 +41,7 @@ Carry out drinking a can:
 Understand "suck [something]", "suck on [something]", "gulp [something]", "gulp from [something]", "drink from [something]", "dr [something]", "dri [something]" as drinking.
 
 Check drinking a bottle:
-	if the noun is not held and the player is upright:
+	if the noun is not held and the player is not prone:
 		if the player is able to use their hands:
 			try taking the noun;
 			if the noun is held:
@@ -49,7 +49,7 @@ Check drinking a bottle:
 				if the player is in danger, say "[bold type]You are in danger, so you stop.[roman type][line break]" instead;
 		otherwise:
 			say "You're going to have to kneel down if you want to drink that." instead;
-	if the noun is held and the player is not able to use their hands, say "Since you don't have the use of your hands, you're going to have to put that on the ground[if the player is upright] and kneel down[end if] if you want to drink it." instead;
+	if the noun is held and the player is not able to use their hands, say "Since you don't have the use of your hands, you're going to have to put that on the ground[if the player is not prone] and kneel down[end if] if you want to drink it." instead;
 	if the player is overly full and the stomach-water of the player > 2:
 		say "You are already feeling very full.  Are you sure you want to force even more down (you will have a significantly reduced chance of gaining positive effects)? [yesnolink] ";
 		unless the player consents, do nothing instead.

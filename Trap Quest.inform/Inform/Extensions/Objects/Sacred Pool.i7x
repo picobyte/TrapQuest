@@ -9,9 +9,12 @@ To say PoolDesc:
 	[if images visible is 1, display figure of sacred pool;]
 	say "A [if the corruption of the sacred pool < 90]crystal clear pool of water[otherwise if the corruption of the sacred pool < 180]slightly murky pool of water[otherwise]an opaque pool of what might be water[end if], rippling gently as a stone statue on the far edge gently trickles more in from a small basin cradled in her hands.".
 
+Check showering sacred pool:
+	if the player is on a skippy ball, say "you need to get off the skippy ball for that." instead.
+
 Carry out showering sacred pool:[Much later: some interaction with slimegirl; Soon: bad effect when pool is corrupted]
 	now tracked-semen is 0;
-	if seconds is 0, say "You [if the player is upright]walk up to the pool[otherwise]crawl up to the pool[end if] and sink into the [if the corruption of the sacred pool < 90]sparkling[otherwise if the corruption of the sacred pool > 200]misty[otherwise]murky[end if] waters.";
+	if seconds is 0, say "You [movementDesc] up to the pool and sink into the [if the corruption of the sacred pool < 90]sparkling[otherwise if the corruption of the sacred pool > 200]misty[otherwise]murky[end if] waters.";
 	let S be 0;
 	let B be the number of worn blessed clothing + the number of worn cursed clothing;
 	[Wash Salves;]

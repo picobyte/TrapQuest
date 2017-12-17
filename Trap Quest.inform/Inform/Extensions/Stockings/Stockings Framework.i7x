@@ -121,7 +121,7 @@ Check taking off stockings:
 	if there are worn shoes, say "You need to take off your [random worn shoes] first." instead;
 	repeat with L running through worn leg covering clothing:
 		unless L is the noun, say "You need to take off your [L] first." instead;
-	if the player is prone, say "You need to be standing up really." instead.
+	if the player is not upright, say "You need to be standing up really." instead.
 
 stockings removability rules is a rulebook.  The removability rules of stockings is usually stockings removability rules.
 

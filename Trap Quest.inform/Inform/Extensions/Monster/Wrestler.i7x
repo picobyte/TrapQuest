@@ -767,7 +767,7 @@ To compute teaching of (M - a wrestler):
 Section 3 - Drink Requesting
 
 To compute friendly drink of (M - a wrestler):
-	if the player is prone and watersports fetish is 1:
+	if the player is not upright and watersports fetish is 1:
 		say "The [M]'s eyes light up.  [second custom style]'One Toilet Special, coming right up!'[roman type][line break]The [M] doesn't give you a chance to ask what that means before she has unzipped her crotch and starting pissing straight at you!  [variable custom style][if the bimbo of the player < 6]Shit shit shit![otherwise if the bimbo of the player < 13]That's not what I meant...[otherwise]Ooh, yum![end if]";
 		FacePiss;
 	otherwise:

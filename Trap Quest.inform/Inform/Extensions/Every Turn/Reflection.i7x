@@ -410,7 +410,7 @@ REQUIRES COMMENTING
 
 +!]
 To reflect on (A - outrageous-evening-dress):
-	say "[variable custom style]Oh god, I can barely [if the player is upright]walk[otherwise]crawl[end if] in this tight dress.  And it doesn't even provide me with much modesty!".
+	say "[variable custom style]Oh god, I can barely [movementDesc] in this tight dress.  And it doesn't even provide me with much modesty!".
 
 [!<outrageousNightie:HumiliatingSituation>*
 

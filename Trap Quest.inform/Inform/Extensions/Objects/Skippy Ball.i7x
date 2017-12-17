@@ -44,13 +44,20 @@ To get thrown off (S - a skippy ball):
 			let D be a random number between 5 and 25;
 			if D < X:
 				silently try kneeling;
-				say " ..and you fall on the ground. ";
+				say "You fall flat on your face. ";
 				if autostand is 1 and the player is prone, now delayed stand is 1;
 			otherwise:
 				increase the fat-burning of the player by 2;
 				silently try standing;
 				say "You somehow keep your footing. ";
 			say "[bold type]You[']re still in the [location of the player].[roman type]".
+
+To force off (S - a skippy ball):
+	if the stickiness of S > 0:
+		say "You scream along with all the tiny hairs on your legs as you are forced from the skippy ball. Guess you won't need another wax down there for a while.. ";
+		now the stickiness of S is 0;
+	if a skippy dildo (called D) is part of S:
+		end the penetration of D.
 
 To pick the penetration of (D - a skippy dildo):
 	if the size of D > 0:
@@ -77,7 +84,8 @@ To end the penetration of (D - a skippy dildo):
 		let X be the vagina;
 		if D is penetrating the asshole, now X is the asshole;
 		now D is not penetrating X;
-		say "As you get off the skippy ball, the dildo mounted on it leaves your [ShortDesc of X], still slick with your juices. ".
+		say "As you get off the skippy ball, the dildo mounted on it leaves your [ShortDesc of X], still slick with your juices. ";
+		humiliate 140.
 
 After entering the skippy ball (called S):
 	if a skippy dildo (called D) is part of S, pick the penetration of D;

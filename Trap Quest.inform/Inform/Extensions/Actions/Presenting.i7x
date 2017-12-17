@@ -109,7 +109,7 @@ REQUIRES COMMENTING
 
 +!]
 This is the player can only present when kneeling rule:
-	if the player is upright:
+	if the player is not prone:
 		if auto is 0, say "You need to get on your knees first.";
 		rule fails.
 The player can only present when kneeling rule is listed in the global presentable rules.
@@ -173,7 +173,7 @@ Check direct-presenting something to:
 		say "You can only present an orifice on your body that can be fucked[if the largeness of breasts >= 5] or your breasts[end if]." instead;
 	if the second noun is gloryhole:
 		if the noun is face:
-			if the player is prone, try entering gloryhole instead;
+			if the player is not upright, try entering gloryhole instead;
 			say "You would need to be on your knees." instead;
 		if the noun is penis or the noun is vagina:
 			if the player is prone, try entering gloryhole instead;

@@ -578,7 +578,8 @@ To compute unfriendly drink of (M - a monster):
 
 To compute desperate drinking to (M - a monster):
 	say "You spot a [M]! You [if the player is upright]drop to your knees and [end if]beg [him of M] to give you something to drink.";
-	now the stance of the player is 1;
+	if the player is upright:
+		now the stance of the player is 1;
 	if M is unfriendly or M is objectifying the player:
 		if M is friendly, anger M;
 		compute unfriendly drink of M;
@@ -671,7 +672,8 @@ To compute unfriendly food of (M - a monster):
 		
 To compute desperate eating to (M - a monster): [Currently unused]
 	say "You spot a [M]! You [if the player is upright]drop to your knees and [end if]beg [him of M] to give you something to eat.";
-	now the stance of the player is 1;
+	if the player is upright:
+		now the stance of the player is 1;
 	if M is unfriendly:
 		compute unfriendly food of M;
 	otherwise:

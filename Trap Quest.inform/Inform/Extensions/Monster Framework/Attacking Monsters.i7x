@@ -163,6 +163,19 @@ The player can't attack when prone rule is listed in the ability to slap rules.
 The player can't attack when prone rule is listed in the ability to knee rules.
 The player can't attack when prone rule is listed in the ability to kick rules.
 
+[!<ThePlayerCanNotAttackWhenProneRule>+
+
+This rule causes an attack to fail when the player is mounted. If the player is attacking manually, outputs a brief message explaining why.
+
++!]
+This is the player can't attack when mounted rule:
+	if the player is mounted:
+		if autoattack is 0, say "You cannot knee when mounted.";
+		rule fails.
+
+The player can't attack when mounted rule is listed in the ability to knee rules.
+
+
 [!<ThePlayerCanNotAttackWhenImmobileRule>+
 
 The rule causes a knee or a kick to fail when the player is immobile. If the player is attacking manually, outputs a brief message explaining why.

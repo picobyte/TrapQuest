@@ -186,7 +186,7 @@ To check glue tripping:
 		let BaseDiff be 0;
 		let HairDiff be 0;
 		let HeelsDiff be 0;
-		if the stance of the player is 1:
+		if the player is not upright:
 			now BaseDiff is 5;
 			now HairDiff is the largeness of hair - 10;
 			if HairDiff < 0, now HairDiff is 0;
@@ -391,7 +391,7 @@ To compute glue escaping:
 				otherwise:
 					say "You did it! You've pulled free of the glue!  ";
 					compute raw glue escaping G with 0;
-					if the player is not prone:
+					if the player is upright:
 						say "You may want to tiptoe out of this room and hope the glue dries.";
 					let M be a random intelligent monster in the location of the player;
 					if M is monster and M is not ghost:

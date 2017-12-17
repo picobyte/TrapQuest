@@ -13,7 +13,7 @@ Check taking something:
 	if the noun is stuck, say "That's stuck in place!" instead;
 	if the class of the player is living sex doll and the number of things carried by the player > 0, say "You can only carry one item at a time without proper hands!" instead;
 	if there is a worn tethering lipstick collar, say "You won[']t be able to reach it with the chain trying to pull you out of the room!" instead;
-	if the player is wrist bound and there is a worn heels and the player is upright:
+	if the player is wrist bound and there is a worn heels and the player is not prone:
 		let X be the trip hazard of the player;
 		let D be a random number between 0 and 17; [NB dexterity is NOT used here, only when dealing with monsters and traps.]
 		if debugmode is 1, say "Walking attempt: Player ([D].5 | [X] Heels)[line break]";

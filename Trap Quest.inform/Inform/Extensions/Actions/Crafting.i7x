@@ -10,7 +10,7 @@ Check crafting:
 	if the player is not able to manually use manual dexterity, do nothing instead;
 	if the player is immobile, say "You're kind of tied up at the moment." instead;
 	if the player is in danger, say "You can't do delicate alchemy right now, you have to defend yourself against the [random unfriendly interested monster in the location of the player]!" instead;
-	if the player is prone, say "You would need to be standing up." instead;
+	if the player is not upright, say "You would need to be standing up." instead;
 	if the noun is bottle:
 		if the doses of the noun is 0:
 			now seconds is 2;
