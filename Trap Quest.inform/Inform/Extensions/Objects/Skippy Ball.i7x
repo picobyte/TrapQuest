@@ -29,7 +29,7 @@ Check entering the skippy ball:
 		if the player is on S:
 			say "You[']re currently on a skippy ball." instead.]
 
-Check getting off the skippy ball (called S):
+Check getting off a skippy ball (called S):
 	if the player is not on S, say "You're not on the skippy ball. " instead;
 	if the stickiness of S > 0, say "You cannot get off the skippy ball, you are still glued to it! " instead.
 

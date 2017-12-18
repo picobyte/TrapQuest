@@ -64,9 +64,9 @@ Carry out knifing:
 					if the player is upright:
 						say "You bend down to try and free your ankles, but while you[']re looking for a clean cut, several vines lash out and grab you by the wrists, slamming you down onto all fours!";
 						now the stance of the player is 1;
-					otherwise:
+					otherwise if the player is on a skippy ball (called S):
 						say "You try to free your ankles, but while you[']re looking for a clean cut, several vines lash out and grab you by the wrists, pulling you down.";
-						try getting thrown offf the skippy ball;
+						get thrown off S;
 				otherwise:
 					say "You try, but you can't bend over enough to find a place for a clean cut! Maybe you should keep trying?";
 		otherwise:

@@ -10,7 +10,6 @@ REQUIRES COMMENTING
 Check jumping:
 	if the player is in Capsule, say "There's not enough space to jump while you're lying down in the capsule." instead;
 	if the player is in Start, say "Stop messing around and choose a gender!" instead;
-	if the player is on a skippy ball, say "Just tell me which way." instead;
 	if the player is prone, say "You can't jump while on all fours!" instead;
 	if the throne is triggered, say "You can't jump while sitting on the throne." instead;
 	if the player is vine stuck, say "Vines are pinning your ankles to the ground!  Try [bold type]pulling[roman type] them?" instead;
@@ -37,12 +36,18 @@ Check jumping:
 Understand "leap", "bounce", "ju" as jumping.
 
 After jumping:
-	if the player is on skippy ball (called S) and a skippy dildo (called D) is part of the S:
-		if the D is worn by the player:
+	if the player is on skippy ball (called S) and there is a skippy dildo (called D) part of S:
+		if D is worn by the player:
 			let P be the vagina;
 			if the player is male or D is penetrating the asshole:
 				now P is the asshole;
 			say "[if there is lubricant covering P]The lube is still working its magic -- you feel no resistance, no pain, just[otherwise]You feel[end if] [one of]the dildo[or]the protrusion[or]yet another few inches[at random] [one of]bash[or]slam into[or]reentering[or]ramm ing[or]smacking[or]sliding all the way into[at random] your [ShortDesc of P]. ";
 			humiliate 20;
+		if the player is zeroG:
+			now last-turn-flight is 1;
+			say "Due to your extremely light weight you bounce back up a lot higher than expected, and you are currently still afloat.";
+			if D is worn by the player:
+				say " Oh no! Now everyone can see the dildo mounted on the skippy ball.";
+				humiliate 140;
 
 Jumping ends here.

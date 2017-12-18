@@ -44,6 +44,47 @@ Definition: yourself is mounted:
 	if the stance of it is 2, decide yes;
 	decide no.
 
+[!<SayMovementDesc>+
+
+REQUIRES COMMENTING
+
++!]
+To say movementDesc:
+	if the player is upright, say "walk";
+	if the player is crawling, say "crawl";
+	if the player is on a skippy ball, say "bounce";
+
+[!<SayMovementDesc>+
+
+REQUIRES COMMENTING
+
++!]
+To say movingDesc:
+	if the player is upright, say "walking";
+	if the player is crawling, say "crawling";
+	if the player is on a skippy ball, say "bouncing";
+
+[!<SayMovedDesc>+
+
+REQUIRES COMMENTING
+
++!]
+To say movedDesc:
+	if the player is upright, say "walked";
+	if the player is crawling, say "crawled";
+	if the player is on a skippy ball, say "bounced";
+
+[!<SayStayDesc>+
+
+REQUIRES COMMENTING
+
++!]
+To say stayDesc:
+	if the player is upright, say "stand";
+	if the player is crawling, say "lie";
+	if the player is mounted:
+		if the player is on a skippy ball, say "sit";
+
 To say kneeForcing:
 	if the player is upright:
 		say ", [one of]forcing[or]which forces[at random] you [one of]onto[or]down on[at random] [one of]your hands and knees[or]your knees[or]all fours[at random]";

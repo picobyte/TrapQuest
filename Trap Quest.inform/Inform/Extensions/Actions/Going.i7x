@@ -261,40 +261,6 @@ Definition: yourself is squirming:
 	if there is an insertable object penetrating a fuckhole, decide yes;
 	decide no.
 
-[!<SayMovementDesc>+
-
-REQUIRES COMMENTING
-
-+!]
-To say movementDesc:
-	if the player is upright, say "walk";
-	if the player is crawling, say "crawl";
-	if the player is mounted:
-		if the player is on a skippy ball, say "bounce";
-
-[!<SayMovementDesc>+
-
-REQUIRES COMMENTING
-
-+!]
-To say movingDesc:
-	if the player is upright, say "walking";
-	if the player is crawling, say "crawling";
-	if the player is mounted:
-		if the player is on a skippy ball, say "bouncing";
-
-[!<SayMovedDesc>+
-
-REQUIRES COMMENTING
-
-+!]
-To say movedDesc:
-	if the player is upright, say "walked";
-	if the player is crawling, say "crawled";
-	if the player is mounted:
-		if the player is on a skippy ball, say "bounced";
-
-
 [!<movementReductionFlavSaid:Integer>*
 
 REQUIRES COMMENTING
@@ -510,7 +476,8 @@ Check going:
 		if the player is prone:
 			say "You try to crawl forward but by pushing on the ground with your extremely light body, you inadvertently stand up.";
 			silently try standing;
-		if the player is mounted and the player is on a skippy ball, Bounce Bigtime;
+		otherwise if the player is on a skippy ball:
+			try jumping;
 	if the player is prone and a random number between -3 and 3 > the weight of the player:
 		say "You try to crawl forward but by pushing on the ground with your extremely light body, you inadvertently stand up.";
 		silently try standing;

@@ -573,7 +573,7 @@ To say WettingPosterDesc:
 	say "It is very easy to recognize you just from this image.  [TitleDesc of item described]".
 
 To say ShortDesc of (P - a wetting poster):
-	say "An extremely detailed photo of you from the front, shot from ground level.  You are [if old-stance of P is 0]standing with your knees slightly bent.  [otherwise old-stance of P is 1]on your hands and knees.  [otherwise]sitting on a skippy ball with your knees slightly bent.  [end if][if urination-target of P is clothing]You are very visibly wetting yourself into your [urination-target of P].  [otherwise if urination-target of P is room]You are very visibly peeing onto the floor of the [urination-target of P].  [otherwise]You are very visibly peeing onto the ground.  [end if]";
+	say "An extremely detailed photo of you from the front, shot from ground level.  You are [if old-stance of P is 0]standing with your knees slightly bent.  [otherwise if old-stance of P is 1]on your hands and knees.  [otherwise]sitting on a skippy ball with your knees slightly bent.  [end if][if urination-target of P is clothing]You are very visibly wetting yourself into your [urination-target of P].  [otherwise if urination-target of P is room]You are very visibly peeing onto the floor of the [urination-target of P].  [otherwise]You are very visibly peeing onto the ground.  [end if]";
 	if image cutscenes is 1 and the title of P is "TEACHER'S PET" and the class of the player is schoolgirl, display figure of teachers pet cutscene 1.
 
 To decide which number is the lewdness of (P - a wetting poster):

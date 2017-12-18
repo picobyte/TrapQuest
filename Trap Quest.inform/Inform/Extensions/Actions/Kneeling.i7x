@@ -37,9 +37,9 @@ Check kneeling:
 		if seconds is 0, try waiting instead; [Default to waiting if a kneel command is used manually.]
 		do nothing instead;
 	if the throne is filling asshole, say "[if seconds is 0]You can't kneel when you're already sitting down![end if]" instead;
-	if the player is on a skippy ball:
-		try the player getting off the skippy ball;
-		if the player is on a skippy ball:
+	if the player is on a skippy ball (called S):
+		try getting off S;
+		if the player is on S:
 			say "It may be possible to try kneeling when you're not fucking stuck to a skippy ball! " instead;
 	if the player is prone:
 		if the player is glue stuck:

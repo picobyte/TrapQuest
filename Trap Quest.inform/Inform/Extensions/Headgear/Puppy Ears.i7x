@@ -35,7 +35,7 @@ To compute class outfit of (H - a puppy ears):
 			summon K cursed;
 			now the raw-magic-modifier of K is 0;
 			if the player is prone:
-				now he raw-magic-modifier of K is 1;
+				now the raw-magic-modifier of K is 1;
 			now puppy-summoned is 1;
 		otherwise if the class of the player is puppygirl and P is actually summonable and the player is not ass protected:
 			say "[bold type]You feel your [asshole] suddenly invaded by a foreign object!  Looking around you see a puppy tail swaying proudly from your [asshole].[roman type][line break]";

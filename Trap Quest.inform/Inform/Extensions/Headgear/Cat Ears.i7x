@@ -39,7 +39,7 @@ To compute class outfit of (H - a cat ears):
 			summon M cursed;
 			now the raw-magic-modifier of M is 0;
 			if the player is prone:
-				now he raw-magic-modifier of M is 1;
+				now the raw-magic-modifier of M is 1;
 			now kitty-summoned is 2;
 		otherwise if W is actually summonable and the class of the player is magical girl:
 			say "[bold type]You feel a rush of magic as a wand suddenly materializes in your hand![roman type][line break]";
@@ -53,7 +53,7 @@ To compute class outfit of (H - a cat ears):
 			summon K cursed;
 			now the raw-magic-modifier of K is 0;
 			if the player is prone:
-				now he raw-magic-modifier of K is 1;
+				now the raw-magic-modifier of K is 1;
 			if kitty-summoned < 1, now kitty-summoned is 1;
 		otherwise if C is actually summonable:
 			say "[bold type]You feel a sudden tightness around your neck.  You look down to see that a cat collar has appeared![roman type][line break]";

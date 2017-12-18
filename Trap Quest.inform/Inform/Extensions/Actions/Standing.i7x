@@ -31,18 +31,6 @@ To decide which number is the standing challenge of the player:
 	if the player is wrist bound behind, increase W by 7;
 	decide on W.
 
-[!<SayStayDesc>+
-
-REQUIRES COMMENTING
-
-+!]
-To say stayDesc:
-	if the player is upright, say "stand";
-	if the player is crawling, say "lie";
-	if the player is mounted:
-		if the player is on a skippy ball, say "sit";
-
-
 [!<SayStandSubduedFlavOfClothing>+
 
 REQUIRES COMMENTING

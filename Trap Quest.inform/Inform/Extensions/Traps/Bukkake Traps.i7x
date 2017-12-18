@@ -106,7 +106,7 @@ To trigger (Y - a bukkake trap door):
 	let R be a random number between 7 and 13;
 	if the living belt of sturdiness is worn and the living belt of sturdiness is not cursed, now R is -9999;
 	if debugmode is 1, say "Player [Strength of the player - weight of the player] |  [R].5 Bukkake[paragraph break]";
-	if the player is standing and strength of the player - the weight of the player < R:
+	if the player is upright and (strength of the player - the weight of the player < R):
 		say "The weight of the deluge forces you onto your knees.  ";
 		try kneeling.
 
