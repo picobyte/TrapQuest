@@ -24,7 +24,7 @@ To decide which number is the alchemy key of (C - a living belt of sturdiness):
 	decide on 19.
 
 Definition: A clothing (called C) is thrusting:
-	if C is living belt of sturdiness and C is penetrating a fuckhole and the player is upright and the player is horny, decide yes;
+	if C is living belt of sturdiness and C is penetrating a fuckhole and the player is not prone and the player is horny, decide yes;
 	decide no.
 
 To decide which number is the girth of (I - the living belt of sturdiness):
@@ -40,7 +40,7 @@ Definition: a living belt of sturdiness (called C) is untransformable:
 	decide yes.
 
 To compute periodic effect of (I - living belt of sturdiness):
-	if the player is upright:
+	if the player is not prone:
 		if the living belt of sturdiness is penetrating a fuckhole:
 			if the buildup of the living belt of sturdiness > 6 and a random number between 1 and (30 - buildup of living belt of sturdiness) < 2 and the player is not unable to orgasm so soon:
 				say "The steady fucking of the strong, rhythmic silver tentacle[if living belt of sturdiness is penetrating vagina and living belt of sturdiness is penetrating asshole]s[end if] of your [printed name of living belt of sturdiness] [one of]finally[or]once again[stopping] becomes too much for you, and your knees wobble and fail as you reach an extremely powerful climax.[line break][if the player is gagged]You scream into your [printed name of random ballgag worn by the player].  [variable custom style]'MMMMMPHH!!!'[otherwise][variable custom style]'Oooooooh fuuuuuuuuccckk!'[end if][roman type][line break]";

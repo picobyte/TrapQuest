@@ -42,7 +42,7 @@ The herald priority attack rules is a rulebook.  The priority attack rules of a 
 
 This is the herald's power attack rule:
 	let M be current-monster;
-	if the player is upright:
+	if the player is not prone:
 		say "Pink lightning arcs from Valleyhotep! You feel terribly tired and yet also horny at the same time!";
 		FatigueUp a random number between the difficulty of M and the buckle threshold of the player / 5;
 		arouse 200.

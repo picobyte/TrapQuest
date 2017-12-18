@@ -161,7 +161,7 @@ To compute gloryhole genital modification:
 			
 
 To say SexResistFlav of (G - gloryhole):
-	if the player is prone:
+	if the player is not upright:
 		if a random number between 1 and (the semen taste addiction of the player * the semen taste addiction of the player * the semen taste addiction of the player) > 700:
 			say "You can't bring yourself to stop right now!  [SexSubmissionFlav of G]";
 		otherwise:
@@ -184,7 +184,7 @@ To say SexResistFlav of (G - gloryhole):
 		
 
 To say SexSubmissionFlav of (G - a gloryhole):
-	if the player is prone:
+	if the player is not upright:
 		say "[if the oral sex addiction of the player < 5]You stay still and let the anonymous [manly-penis] fuck your mouth.[otherwise][one of]You fellate the anonymous [manly-penis] with your mouth.[or]You suck diligently on the [manly-penis] poking through the hole in the wall.[or]You find yourself moaning gently as you pleasure the anonymous stranger's [manly-penis].[or]You smile inwardly at the pleasant taste of the stranger's [manly-penis].[or]You push the large [manly-penis] to the back of your mouth tickling the entrance to your throat.  The man on the other side of the wall groans with pleasure.[or]You fuck the anonymous [manly-penis] with your face as fast and hard as you can, making a [variable custom style]'Hyuk hyuk hyuk'[roman type] sound as you do.[in random order][end if]";
 	otherwise if G is normal glory hole:
 		if player-urinating is 1:

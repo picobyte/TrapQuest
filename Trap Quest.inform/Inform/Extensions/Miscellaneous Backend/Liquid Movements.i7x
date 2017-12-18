@@ -258,11 +258,14 @@ To UniqueSquirt (L - a liquid-object) On (C - a shoes) by (N - a number):
 		LiquidSoak L on C;
 		decrease N by 1.
 
-Report going when there are worn shoes and the player is upright:
+Report going when there are worn shoes and the player is not prone:
 	let C be a random worn shoes;
+	let onSurfaceDesc be "to the ground";
+	if the player is on a skippy ball:
+		now onSurfaceDesc is "on the skippy ball";
 	if the total-soak of C > the soak-limit of C:
 		if the urine-soak of C > 0 and the semen-soak of C > 0:
-			say "As you walk, a horrid mixture of [urine] and [semen] squelches out of your [ShortDesc of C] and dribbles to the ground.";
+			say "As you [movementDesc], a horrid mixture of [urine] and [semen] squelches out of your [ShortDesc of C] and dribbles [onSurfaceDesc].";
 			puddle water before urine from C;
 			while the total-soak of C > the soak-limit of C:
 				if the semen-soak of C > the urine-soak of C:
@@ -272,17 +275,17 @@ Report going when there are worn shoes and the player is upright:
 					decrease the urine-soak of C by 1;
 					PuddleUp urine by 1;
 		otherwise if the urine-soak of C > 0:
-			say "As you walk, excess [urine] squelches out of your [ShortDesc of C] and dribbles to the ground.";
+			say "As you [movementDesc], excess [urine] squelches out of your [ShortDesc of C] and dribbles [onSurfaceDesc].";
 			puddle water before urine from C;
 			PuddleUp urine by the total-soak of C - the soak-limit of C;
 			decrease the urine-soak of C by the total-soak of C - the soak-limit of C;
 		otherwise if the semen-soak of C > 0:
-			say "As you walk, excess [semen] squelches out of your [ShortDesc of C] and bubbles to the ground.";
+			say "As you [movementDesc], excess [semen] squelches out of your [ShortDesc of C] and bubbles [onSurfaceDesc].";
 			puddle water before semen from C;
 			PuddleUp semen by the total-soak of C - the soak-limit of C;
 			decrease the semen-soak of C by the total-soak of C - the soak-limit of C;
 		otherwise if the milk-soak of C > 0: [hopefully super rare or I'll have to recode this]
-			say "As you walk, excess [milk] squelches out of your [ShortDesc of C] and bubbles to the ground.";
+			say "As you [movementDesc], excess [milk] squelches out of your [ShortDesc of C] and bubbles [onSurfaceDesc].";
 			puddle water before milk from C;
 			PuddleUp milk by the total-soak of C - the soak-limit of C;
 			decrease the milk-soak of C by the total-soak of C - the soak-limit of C.

@@ -60,7 +60,7 @@ To say ClothingDesc of (C - an organza nightie):
 	say "This flimsy, girly, sheer nightie hangs flimsily from straps around your shoulders and does absolutely nothing to hide your modesty.".
 
 To compute SelfExamineDesc of (O - an organza nightie):
-	say "A [ShortDesc of O] hangs lightly off your shoulders[if the player is upright] and sways gently as you walk[end if].  ".
+	say "A [ShortDesc of O] hangs lightly off your shoulders[if the player is not prone] and sways gently as you [movementDesc][end if].  ".
 	
 To say ShortDesc of (C - an organza nightie):
 	say "sheer nightie".
@@ -83,7 +83,7 @@ To say ClothingDesc of (C - a nightgown):
 	say "This flimsy, girly, long sheer nightgown hangs flimsily from straps around your shoulders and does absolutely nothing to hide your modesty.[if C is worn and the player is prone]You feel yourself regaining energy rapidly![end if]".
 
 To compute SelfExamineDesc of (O - a nightgown):
-	say "A long sheer nightgown hangs lightly off your shoulders[if the player is upright] and sways gently as you walk[end if].  ".
+	say "A long sheer nightgown hangs lightly off your shoulders[if the player is not prone] and sways gently as you [movementDesc][end if].  ".
 
 To decide which number is the initial outrage of (C - a nightgown):
 	decide on 7.
@@ -124,7 +124,7 @@ To say ClothingDesc of (C - a pink nightie):
 	say "This silky girly, hot pink nightie hangs flimsily from straps around your shoulders and does absolutely nothing to hide your belly or crotch.  However it does provide some modesty to [if C is worn]your [BreastDesc][otherwise]the wearer's chest[end if], as this part is opaque.".
 
 To compute SelfExamineDesc of (O - a pink nightie):
-	say "A [ShortDesc of O] hangs lightly off your shoulders[if the player is upright] and sways gently as you walk[end if].  ".
+	say "A [ShortDesc of O] hangs lightly off your shoulders[if the player is not prone] and sways gently as you [movementDesc][end if].  ".
 	
 To say ShortDesc of (C - a pink nightie):
 	say "pink nightie".
@@ -150,7 +150,7 @@ To say ClothingDesc of (C - a flimsy pink nightie):
 	say "This silky girly, flimsy pink nightie hangs softly from straps around your shoulders and does absolutely nothing to hide your crotch.".
 
 To compute SelfExamineDesc of (O - a flimsy pink nightie):
-	say "A [ShortDesc of O] hangs lightly off your shoulders[if the player is upright] and sways gently as you walk[end if].  ".
+	say "A [ShortDesc of O] hangs lightly off your shoulders[if the player is not prone] and sways gently as you [movementDesc][end if].  ".
 	
 To say ShortDesc of (C - a flimsy pink nightie):
 	say "flimsy pink nightie".

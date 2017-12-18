@@ -273,6 +273,7 @@ Volume 5 - Every Turn (MAIN CODE BLOCK)
 Include Compute Turn by Every Turn.
 Include Player Standing by Every Turn.
 Include Player Kneeling by Every Turn.
+Include Player Mounted by Every Turn.
 Include Automatic Actions by Every Turn.
 Include Periodical Clothing Effects by Every Turn.
 Include Periodical Other Effects by Every Turn.

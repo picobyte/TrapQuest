@@ -102,20 +102,19 @@ To trigger (Y - an ass hook):
  		now Y is unrevealed;
  	otherwise:
  		say "glides swiftly into your [asshole] with the upward motion of the rope.  You realise as it tries to lift you off the ground by your delicate hole that this is an ass hook on the end of the rope!  It lifts you onto your tiptoes and clearly would lift you off the ground by your [asshole] if its pulling mechanism had the strength!";
-		if the player is mounted:
-			if the player is on a skippy ball (called S):
-				if the stickiness of S > 0:
-					humiliate 50;
-					say "As you are pulled upright, the skippy ball glued to you is also pulled from the ground. ";
-					if there is a skippy dildo (called D) part of S and the size of D > 0:
-						say "The dildo, still plugged halfway in your [if D is penetrating the asshole][asshole][othewise][vagina][end if], is clearly visible! Nothing to see here, now please move along. ";
-						humiliate 150;
-				otherwise:
-					say "As you are pulled upright, the skippy ball rolls away. ";
-					if there is a skippy dildo (called D) part of S and the size of D > 0:
-						say "The dildo on it is clearly visible[if D is penetrating the vagina], still slick with your juices[end if].";
-						humiliate 80;
-				silently try getting off the skippy ball;
+		if the player is on a skippy ball (called S):
+			if the stickiness of S > 0:
+				humiliate 50;
+				say "As you are pulled upright, the skippy ball glued to you is also pulled from the ground. ";
+				if there is a skippy dildo (called D) part of S and the size of D > 0 and D is worn by the player:
+					say "The dildo, still plugged halfway in your [if D is penetrating the asshole][asshole][othewise][vagina][end if], is clearly visible! 'Nothing to see here, now please move along.' ";
+					humiliate 150;
+			otherwise:
+				say "As you are pulled upright, the skippy ball rolls away. ";
+				if there is a skippy dildo (called D) part of S and the size of D > 0 and D is worn by the player:
+					say "The dildo on it is clearly visible[if D is penetrating the vagina], still slick with your juices[end if].";
+					humiliate 80;
+				silently try getting off S;
  		if image cutscenes is 1:
 			if the player is male, display figure of hook cutscene 1;
 			otherwise display figure of hook cutscene 2;

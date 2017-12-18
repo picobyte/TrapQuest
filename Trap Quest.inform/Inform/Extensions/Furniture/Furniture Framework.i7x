@@ -11,6 +11,7 @@ Check entering furniture:
 	if the latex-transformation of the player > 5 and the noun is not HotelBedPatrons and the noun is not hotel chairs and the noun is not modification machine, say "You don't need to rest on furniture as you have no body soreness to heal[if the noun is milking bench] and no [milk] in your breasts[end if]." instead;
 	if the player is upset about mess, say "[variable custom style]There's no way I'm resting until I've [if the bimbo of the player < 10]got[otherwise]been[end if] changed.[roman type][line break]" instead;
 	if the player is immobile, say "Aren't you a bit busy?" instead;
+	if the player is on a skippy ball, say "You need to get off the skippy ball for that." instead;
 	if the fatigue of the player is 0 and the body soreness of the player is 0 and the noun is not modification machine and (the noun is not milking bench or the milk volume of breasts <= 0) and the noun is not lecture chair, say "You feel completely fine." instead;
 	if the player is in danger, say "You need to deal with the [random dangerous monster in the location of the player] first!" instead;
 	if the player is urine averse and the urine-puddle of the location of the player > 0 and the noun is not royal bed, say "[variable custom style]I'm not resting in this room with the smell of [urine] everywhere![roman type]" instead;

@@ -13,7 +13,7 @@ REQUIRES COMMENTING
 
 +!]
 Report going when the player is in Hotel20:
-	if the player is upright:
+	if the player is not prone:
 		compute LaundryRobots;
 	otherwise if the number of worn washable clothing > 0:
 		say "Having entered this room on your knees, it would appear that the mechanical arms above you have not detected you.".
@@ -27,7 +27,12 @@ To compute LaundryRobots:
 	let C be a random worn washable clothing;
 	if there is a worn messed knickers, now C is a random worn knickers;
 	if C is clothing, say "As soon as you [if the player is upright]step over the threshold into this room[otherwise]are released[end if], several metal robotic arms shoot at you from every direction!  Four robotic hands grab hold of each of your limbs respectively, rendering you immobile.  ";
-	if C is messed knickers:
+	if the player is on a skippy ball (called S):
+		try silently the player getting off S;
+	if the player is on S:[still? then it was sticky]
+		say "A sudden loud sound blares, red light starts blinking 'MALFUNCTION'. Looks like the skippy ball stuck to your butt caused a malfunction. Momentarily you're suspended by the arms, but just when you start wondering `Now what?` the robotic arms release you and the blaring stops."; [TODO: get stuck here for a while instead, until a mechanic or robot arrives, fucks and then releases you]
+		now the charge of laundry robots is 200;
+	otherwise if C is messed knickers:
 		say "You yelp [if the bimbo of the player < 10][one of]in surprise[or]in frustration[stopping][otherwise]quietly[end if] as your entire body is picked up, carried over and dunked into a large hot vat of soapy water.  The arms unceremoniously strip you of your [C] as you are repeatedly thrust into and out of the bubbly pool.  Finally, you are dropped back down onto the ground, now dripping with water and suds. ";
 		repeat with F running through worn fluid vulnerable clothing:
 			clean F;

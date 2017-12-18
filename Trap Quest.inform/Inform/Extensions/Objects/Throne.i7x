@@ -47,6 +47,7 @@ TrapNo:
 Check entering the throne:
 	if the player is flying, say "You're not even on the ground!" instead;
 	if the player is prone, say "You can't while you are on your hands and knees." instead;
+	if the player is on a skippy ball, say "You need to get off the skippy ball for that." instead;
 	if the throne is triggered, say "You already are!" instead;
 	now seconds is 2;
 	if newbie tips is 1, say "[one of][item style]Newbie tip: The throne has a lot of different possible outcomes when you sit on it, but you can only try it once in a while.  Come back in a bit and try again![roman type][line break][or][stopping]";

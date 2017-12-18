@@ -18,10 +18,10 @@ This is the spatial dropping rule:
 	otherwise:
 		move the noun to the holder of the player.
 
-Check an actor entering the skippy ball:
+Check entering the skippy ball:
 	if the player is staggering, say "You[']re bound to fall over with the size of your belly. " instead;
-	if there are worn heels, say "You cannot use the skippy bally when you're wearing heels. " instead;
-	if the player is ankle bound, say "That won[']t while wearing ankle cuffs. " instead.
+	if the player is ankle bound, say "That won[']t work while wearing ankle cuffs. " instead.
+	[if there are worn heels, say "You cannot use the skippy bally when you're wearing heels. " instead;]
 
 [Before doing something other than greeting something (called O) when the player is on a Skippy Ball (called S):
 	if O is not S:
@@ -29,9 +29,13 @@ Check an actor entering the skippy ball:
 		if the player is on S:
 			say "You[']re currently on a skippy ball." instead.]
 
-Check an actor getting off the skippy ball (called S):
+Check getting off the skippy ball (called S):
 	if the player is not on S, say "You're not on the skippy ball. " instead;
 	if the stickiness of S > 0, say "You cannot get off the skippy ball, you are still glued to it! " instead.
+
+To get off (S - a skippy ball):
+	if a skippy dildo (called D) is part of S:
+		end the penetration of D.
 
 To get thrown off (S - a skippy ball):
 	if the player is mounted and the player is on S:
@@ -40,9 +44,11 @@ To get thrown off (S - a skippy ball):
 		if the stickiness of S > 0:
 			say "The glue on S prevents you from falling off. ";
 		otherwise:
+			if a skippy dildo (called D) is part of S:
+				end the penetration of D;
 			let X be the trip hazard of the player;
-			let D be a random number between 5 and 25;
-			if D < X:
+			let R be a random number between 5 and 25;
+			if R < X:
 				silently try kneeling;
 				say "You fall flat on your face. ";
 				if autostand is 1 and the player is prone, now delayed stand is 1;

@@ -51,7 +51,7 @@ To compute SelfExamineDesc of (Y - a  microskirt):
 	if the player is prone:
 		say "You are sporting a tiny [ShortDesc of Y] around your waist that completely fails to cover your ass or crotch, especially while you are on your knees with your ass in the air.   ";
 	otherwise:
-		say "You are sporting a tiny [ShortDesc of Y] around your waist that almost completely fails to cover your ass, even though you're standing up straight.   ".
+		say "You are sporting a tiny [ShortDesc of Y] around your waist that almost completely fails to cover your ass[if the player is upright], even though you're standing up straight[end if].   ".
 
 To say ShortDesc of (Y - a  microskirt):
 	say "tiny [clothing-material of Y] microskirt".

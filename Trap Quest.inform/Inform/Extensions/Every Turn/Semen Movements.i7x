@@ -246,7 +246,7 @@ REQUIRES COMMENTING
 +!]
 To execute (E - enema-cramping):
 	say "[one of]The [enema] inside your belly puts huge pressure on your rectum[or]Your rectal muscles spasm as it struggles to hold in your [enema][in random order], ";
-	if the player is upright:
+	if the player is not prone:
 		say "[one of]causing your knees to buckle[or]and you fall to your knees[or]making you lose your balance[in random order] as [one of]your intestines cramp up[or]a huge bolt of pain hits your stomach[or]your tummy groans as it cramps[at random].";
 		try kneeling;
 	otherwise:

@@ -20,7 +20,7 @@ Check decanting something with:
 	if the noun is penetrating an orifice, say "That's inside you at the moment..." instead;
 	if the noun is bottle and the second noun is a vessel, try extracting the noun with the second noun instead;
 	if the player is not able to use their hands, say "You can't use your hands right now!" instead;
-	if the player is prone, say "You can't reach while on your knees." instead;
+	if the player is not upright, say "You need to be standing for that." instead;
 	if the second noun is not a dispenser[ and the second noun is not sacred pool], say "The [second noun] doesn't have any liquid in it..." instead;
 	if [the second noun is not sacred pool and ]the doses of the second noun is 0, say "[if the second noun is tank]The[otherwise if the second noun is bucket]You try, but the[end if] [second noun] is empty." instead;
 	if the noun is not held:

@@ -368,7 +368,7 @@ To add treasure to (X - a pedestal):[This function should happen when the mansio
 
 Check drinking a pedestal:
 	unless the noun is erect, say "How would you drink that?" instead;
-	if the player is upright, say "You need to be on your knees first." instead;
+	if the player is not prone, say "You need to be on your knees first." instead;
 	if there is a worn ballgag, say "You would need to remove your gag first." instead.
 	
 Carry out drinking a pedestal:

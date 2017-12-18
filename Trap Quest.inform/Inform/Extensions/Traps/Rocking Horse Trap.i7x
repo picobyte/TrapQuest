@@ -49,9 +49,13 @@ To trigger (Y - a rocking horse):
 			say "As you do, a [T] appears on your head!";
 	otherwise:
 		say "A giant large wooden rocking horse shoots out from the ground beneath you, [if the player is prone]forcing you upright and [end if]pulling you up until your feet aren[']t touching the floor.  ";
-	say "Some kind of magic force seems to keep your butt glued to the saddle! Looks like you're going to have to [bold type]rock[roman type] yourself until it's happy to let you down!";
-	now the stance of the player is 0;
-	now Y is grabbing the player.
+	if the player is on a skippy ball (called S):
+		say "Looks like you're about to learn why you shouldn't ride the rocking horse while sitting on a skippy ball. ";
+		get thrown off S;
+	otherwise:
+		say "Some kind of magic force seems to keep your butt glued to the saddle! Looks like you're going to have to [bold type]rock[roman type] yourself until it's happy to let you down!";
+		now the stance of the player is 0;
+		now Y is grabbing the player.
 
 Check entering rocking horse:
 	if the player is immobile, say "Aren't you a bit busy?" instead;

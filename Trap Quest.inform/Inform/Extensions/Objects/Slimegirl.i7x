@@ -174,7 +174,7 @@ To SlimeGirlCheck (this is the slime-girl-clean rule):
 			let R be a random number between the swimming modifier of the player / 2 and the dexterity of the player;
 			say "[bold type]Do you want to try and escape?[roman type] [yesnolink] [line break]";
 			unless the player consents, now R is -9999;
-			if the player is prone, decrease R by 2;
+			if the player is not upright, decrease R by 2;
 			if debugmode is 1, say "Slimegirl Roll of [R], needs to be less than 8.[line break]";
 			if R < 8:
 				unless R <= -9999, say "It's no good, she's too fast for you!  You can't get away!  ";

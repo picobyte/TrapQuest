@@ -19,6 +19,7 @@ A time based rule (this is the woods statue charge decay rule):
 
 Check touching WoodsScenery02:
 	if the player is immobile, say "Aren't you a bit busy?" instead;
+	if the player is on a skippy ball, say "You need to get off the skippy ball for that." instead;
 	if the charge of the noun > 0:
 		now seconds is 2;
 		say "Nothing happens.  Maybe the magic needs to recharge." instead;

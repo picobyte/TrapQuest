@@ -65,6 +65,9 @@ REQUIRES COMMENTING
 
 +!]
 Check urinating:
+	let surfaceDesc be "floor";
+	if the player is on a skippy ball:
+		now surfaceDesc is "skippy ball";
 	if the bladder of the player is 0 and the number of worn prostate massager plugs is 0:
 		if delayed urination is not 1, say "You don't feel the need." instead;
 		now delayed urination is 0; [We've accidentally forced the player to pee when they can't, oops!  Oh well, let's not break the game.]
@@ -100,20 +103,20 @@ Check urinating:
 						now seconds is 2;
 				otherwise:
 					if P is pants pee refusal inducing and (debugmode is 0 or the player is not a september 2017 top donator), do nothing instead;
-	if the player is prone and the location of the player is bathroom and delayed urination is 0:
-		say "Do you really want to try to pee on the floor here? [yesnolink] ";
+	if the player is not upright and the location of the player is bathroom and delayed urination is 0:
+		say "Do you really want to try to pee on the [surfaceDesc] here? [yesnolink] ";
 		if the player consents:
 			if (the delicateness of the player < 4 or (the humiliation of the player < 19000 and there is an intelligent monster in the location of the player)):
 				if debugmode > 0 and the player is a september 2017 top donator, say "If debugmode was disabled, the player would refuse to pee.";
-				otherwise say "[first custom style]I'm NOT peeing on the floor[if there is an intelligent monster in the location of the player and the delicateness of the player >= 4] in front of the [random intelligent monster in the location of the player][first custom style].[roman type][line break]" instead;
+				otherwise say "[first custom style]I'm NOT peeing on the [surfaceDesc][if there is an intelligent monster in the location of the player and the delicateness of the player >= 4] in front of the [random intelligent monster in the location of the player][first custom style].[roman type][line break]" instead;
 		otherwise:
 			say "Then you should probably stand up first." instead;
 	if a random lake monster is in the location of the player and the bimbo of the player < 14 and delayed urination is 0:
-		say "Do you really want to try to pee on the floor here? [yesnolink] ";
+		say "Do you really want to try to pee on the [surfaceDesc] here? [yesnolink] ";
 		if the player consents:
 			if (the delicateness of the player < 4 or (the humiliation of the player < 19000 and there is an intelligent awake monster in the location of the player)):
 				if debugmode > 0 and the player is a september 2017 top donator, say "If debugmode was disabled, the player would refuse to pee.";
-				otherwise say "[first custom style]I'm NOT peeing on the floor[if there is an intelligent monster in the location of the player and the delicateness of the player >= 4] in front of the [random intelligent awake monster in the location of the player][first custom style].[roman type][line break]" instead;
+				otherwise say "[first custom style]I'm NOT peeing on the [surfaceDesc][if there is an intelligent monster in the location of the player and the delicateness of the player >= 4] in front of the [random intelligent awake monster in the location of the player][first custom style].[roman type][line break]" instead;
 		otherwise:
 			say "Then you should probably go elsewhere, you don't dare go near the lake with the tentacle monster still lurking in these waters.." instead;
 	if the bladder of the player < 4 and (the player is not full or asshole is actually occupied) and delayed urination is not 1:
@@ -230,7 +233,7 @@ To start urination:
 			compute urinal use;
 			say "[PeeReaction 0]";
 		otherwise if the player is able to use a body of water and delayed urination is 0:
-			say "You [if the size of penis > 0 and the player is upright]walk up to the edge and [urinate] into the water[otherwise]walk past the edge, wading into the water until you can discreetly [urinate][end if].  ";
+			say "You [if the size of penis > 0 and the player is upright]walk up to the edge and [urinate] into the water[otherwise][movementDesc] past the edge, wading into the water until you can discreetly [urinate][end if].  ";
 			if incontinence > 0:
 				decrease incontinence by 1;
 				say "You feel as if you've regained some control over your bladder!";

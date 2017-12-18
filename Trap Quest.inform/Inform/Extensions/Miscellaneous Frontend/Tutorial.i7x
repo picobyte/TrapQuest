@@ -143,7 +143,7 @@ Check waiting when tutorial is 1:
 
 Report kicking:
 	if tutorial is 1:
-		if the player is upright:
+		if the player is not prone:
 			compute attack of the noun;
 		if the player is prone:
 			let C be a random worn crotch-in-place dress;

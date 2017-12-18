@@ -26,9 +26,11 @@ To compute furniture resting on (H - a hammock):
 		otherwise say "[second custom style]I'm full of energy again.  Yum![roman type][line break]";
 		now resting is 0;
 		try standing;
-	otherwise:
+	otherwise if the player is prone:
 		say  "You crawl over and rest on your hands and knees, with your torso supported by the hammock.";
-		compute normal rest of H.
+		compute normal rest of H;
+	otherwise if the player is on a skippy ball:
+		say "You cannot rest while you're on a skippy ball.".
 
 To say RestingDesc of (F - a Hammock):
 	say "You continue to rest against the hammock.";

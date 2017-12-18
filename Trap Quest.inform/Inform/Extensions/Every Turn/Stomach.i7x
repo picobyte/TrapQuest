@@ -158,8 +158,10 @@ A time based rule (this is the compute stomach rule):
 		decrease the delayed bladder of the player by 1;
 	if the thirst of the player is 5 and the player is thirsty and delayed fainting is 0 and busy is 0 and the player is able to speak and the player is not flying and the player is not stuck:
 		if the player is in Dungeon10:
-			say "You see the statue with a hollow penis and [if the semen taste addiction of the player < 6]realise you are just too thirsty to resist[otherwise if the semen taste addiction of the player < 10]understand what you need to do to quench your thirst[otherwise]your eyes light up as you realise how you can quench your thirst[end if].  [if the player is upright]You get on your knees.  [end if]";
-			now the stance of the player is 1;
+			say "You see the statue with a hollow penis and [if the semen taste addiction of the player < 6]realise you are just too thirsty to resist[otherwise if the semen taste addiction of the player < 10]understand what you need to do to quench your thirst[otherwise]your eyes light up as you realise how you can quench your thirst[end if].  ";
+			if the player is upright:
+				say "You get on your knees.  ";
+				now the stance of the player is 1;
 			try drinking DungeonScenery01;
 		otherwise if last-begged-time < earnings - 30:
 			repeat with M running through intelligent friendly monsters in the location of the player:

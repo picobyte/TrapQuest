@@ -122,6 +122,8 @@ To interact with a recipe, use [']learn *['].
 
 To interact with the apothecary, use [']craft['].
 
+To ride the skippy ball, use [']sit on['].
+
 To remember a location that you wish to be able to easily find again, use [']remember['].  You can only remember one location at a time.
 
 To go towards to the location you have remembered, use [']return['].  You will only go through rooms that you have previously visited.

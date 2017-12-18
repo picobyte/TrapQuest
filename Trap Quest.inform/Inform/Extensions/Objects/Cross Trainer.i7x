@@ -11,7 +11,7 @@ Check entering cross trainer:
 	if the player is immobile, say "Aren't you a bit tied up at the moment?" instead;
 	if the player is in danger, say "You would, but you are currently in a fight." instead;
 	if the class of the player is the living sex doll, say "You're a sex doll, you're made for getting fucked.  You don't need to exercise." instead;
-	if the player is prone, say "You would need to be standing up." instead;
+	if the player is not upright, say "You would need to be standing up." instead;
 	now seconds is 6;
 	if the charge of cross trainer > 0:
 		now seconds is 6;

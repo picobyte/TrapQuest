@@ -55,14 +55,18 @@ Carry out knifing:
 			say "You can't bend enough to get a safe angle for cutting the rope! Maybe you should try again?";
 	otherwise if the noun is vine:[strength and dexterity check]
 		let V be a random vine grabbing the player;
-		if the player is upright:
+		if the player is not prone:
 			if a random number between 1 and the dexterity of the player > 8:
-				say "You bend down and find an angle where you can safely chop through several of the vines holding your ankles. You're free!";
+				say "You [if the player is upright]bend down and [end if]find an angle where you can safely chop through several of the vines holding your ankles. You're free!";
 				now V is not grabbing the player;
 			otherwise:
 				if the player is vine-cursed and a random number between 3 and the dexterity of the player < 3: [####Selkie: Changed back to < 3. MG to check. Can only fail if Dex is 1 or 2]
-					say "You bend down to try and free your ankles, but while you[']re looking for a clean cut, several vines lash out and grab you by the wrists, slamming you down onto all fours!";
-					now the stance of the player is 1;
+					if the player is upright:
+						say "You bend down to try and free your ankles, but while you[']re looking for a clean cut, several vines lash out and grab you by the wrists, slamming you down onto all fours!";
+						now the stance of the player is 1;
+					otherwise:
+						say "You try to free your ankles, but while you[']re looking for a clean cut, several vines lash out and grab you by the wrists, pulling you down.";
+						try getting thrown offf the skippy ball;
 				otherwise:
 					say "You try, but you can't bend over enough to find a place for a clean cut! Maybe you should keep trying?";
 		otherwise:

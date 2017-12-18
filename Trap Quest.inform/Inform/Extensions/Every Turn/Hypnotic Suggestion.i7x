@@ -92,7 +92,7 @@ This is the present-for-oral hypno rule:
 		if M is nothing:
 			now M is a random monster in the location of the player;
 			if M is monster, now M is interested;
-		if the player is prone:
+		if the player is not upright:
 			if face is actually occupied:
 				say "[if the bimbo of the player > 14]Unfortunately[otherwise]Fortunately[end if], your mouth is already occupied.";
 			otherwise if M is nothing:
