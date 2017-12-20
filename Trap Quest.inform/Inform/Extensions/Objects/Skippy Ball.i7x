@@ -2,10 +2,27 @@ Skippy Ball by Objects begins here.
 
 Include Rideable Vehicles by Graham Nelson. [a rideable vehicle because we want to say that the player is on it rather than in it.]
 
-The skippy ball is a kind of rideable vehicle. It is portable and pushable between rooms. The carrying capacity is always 999. A skippy-dildo is a kind of dong. The size of a skippy-dildo is usually 0. It is scenery. It is part of every skippy ball. There is 1 skippy ball. The text-shortcut of skippy ball is "skpb". Understand "skippy" as the skippy ball. The skippy ball can be glue-stuck. The skippy ball is usually not glue-stuck. The skippy ball has a number called stickiness. The stickiness of the player is usually 0.
+The skippy ball is a kind of rideable vehicle. It is portable and pushable between rooms. The carrying capacity is always 999.
+
+A skippy-dildo is a kind of dong. The size of a skippy-dildo is usually 0. It is scenery.
+
+There is 1 skippy ball. There is 1 skippy-dildo part of it. The text-shortcut of skippy ball is "skpb". Understand "skippy" as the skippy ball.
+The printed name of a skippy ball is usually "[TQlink of item described]skippy ball[TQxlink of item described][verb-desc of item described]".
+The description of a skippy ball is usually "[SkippyBallDesc]".
+
+The skippy ball can be glue-stuck. The skippy ball is usually not glue-stuck.
+The skippy ball has a number called stickiness. The stickiness of the player is usually 0.
 
 Does the player mean getting off the skippy ball when the player is on a skippy ball:
 	It is very likely.
+
+[!<SaySkippyBallDesc>+
+
+REQUIRES COMMENTING
+
++!]
+To say SkippyBallDesc:
+	say "[one of]You remember this from your childhood. Some kids used to call it a moon hopper, or kangaroo ball, but you were used to call it as a skippy ball.[or]A big round red ball with a few protrusions sticking out of it. While sitting on it they provide the leverage for you to leg-battle gravity in bounces.[or]Skippy balls used to be so big and funny, but then, last time you saw one, you were eleven.[or]Why is this peculiar childhood object in this game?[or]Lets not jump to conclusions.[or][stopping]";
 
 [Does the player mean getting on the skippy ball when there is a skippy ball:
 	It is likely.]
@@ -18,24 +35,25 @@ This is the spatial dropping rule:
 	otherwise:
 		move the noun to the holder of the player.
 
-Check mounting the skippy ball:
+Check mounting a skippy ball:
 	if the player is staggering, say "You[']re bound to fall over with the size of your belly. " instead;
 	if the player is ankle bound, say "That won[']t work while wearing ankle cuffs. " instead.
 
-Before mounting the skippy ball (called S):
+Before mounting a skippy ball (called S):
 	if the skippy ball is carried by the player, silently try dropping S.
 
-After mounting the skippy ball (called S):
-	if a skippy-dildo (called D) is part of S and the size of D > 0:
+After mounting a skippy ball (called S):
+	let D be a random skippy-dildo part of S;
+	if the size of D > 0:
 		say "As you mount the skippy ball, you feel the";
 		pick the penetration of D;
 	say "Now you[']re sitting on the skippy ball.";
 	now the stance of the player is 2.
 
 Check dismounting when the player is on a skippy ball (called S):
-	if a pull of 1 leaves you stuck to S, say "You cannot get off the skippy ball, you are still glued to it!" instead;
+	if a pull of 1 leaves you stuck to S, say "You cannot get off the skippy ball, you are still glued to it!" instead.
 
-After dismounting when the player is on a skippy ball (called S):
+After dismounting when the player is on a skippy ball (called S):[XXX not happening]
 	say "Ok, you[']re no longer on it.".
 
 To decide whether a pull of (X - a number) leaves you stuck to (S - a skippy ball):
@@ -49,13 +67,13 @@ To decide whether a pull of (X - a number) leaves you stuck to (S - a skippy bal
 			say "You yelp along with all the remaining tiny hairs on your legs as you are separated from the glued skippy ball. Guess you won[']t need another wax down there for a while.. ";
 		otherwise:
 			say "You managed to pull yourself free from the skippy ball! ";
-	if a skippy-dildo (called D) is part of S:
-		if D is worn by the player:
-			let H be the vagina;
-			if D is penetrating the asshole, now H is the asshole;
-			now D is not penetrating H;
-			say "As you get off the skippy ball, the dildo mounted on it leaves your [ShortDesc of H], still slick with your juices. ";
-			humiliate 140;
+	if the player wears a skippy-dildo (called D):
+		let H be the vagina;
+		if D is penetrating the asshole, now H is the asshole;
+		now D is not penetrating H;
+		now D is not worn by the player;
+		say "As you get off the skippy ball, the dildo mounted on it leaves your [ShortDesc of H][if H is the vagina], still slick with your juices[end if]. ";
+		humiliate 140;
 	decide no.
 
 [Before doing something other than greeting something (called O) when the player is on a Skippy Ball (called S):
@@ -97,16 +115,16 @@ To pick the penetration of (D - a skippy-dildo):
 		humiliate 80;
 	say " dildo mounted on the skippy ball, ";
 	if X is nothing:
-		say "bending forward; unable to penetrate your underwear.[line break]";
+		say "bending forward, unable to penetrate your underwear.[line break]";
 	otherwise:
 		now D is penetrating X;
 		now D is worn by the player;
-		say " which before you[']re fully aware of what is happening already slided in your [ShortDesc of X].[line break][line break]".
+		say "before you can help it, sliding in your [ShortDesc of X].[line break][line break]".
 
 To inflate (D - a skippy-dildo) by (X - a number):
 	sizeUp D by X;
 	if D is not worn by the player:
-		say "You feel something poking in between your legs. Looking down you see, rapidly increasing in size, is a";
+		say "You feel something poking in between your legs. Looking down you see, rapidly increasing in size, a";
 		pick the penetration of D;
 	otherwise:
 		let F be a random fuckhole penetrated by D;
@@ -137,8 +155,7 @@ Instead of pushing, pulling or turning the skippy ball (called S):
 	otherwise:
 		if the strength of the player > a random number between 1 and 5:
 			now S is not glue-stuck;
-			if a skippy-dildo (called D) is part of S:
-				now D is glued;
+			now the stickiness of S is a random number between 15 and 30;
 			say "You managed to pull the skippy ball loose. ";
 		otherwise:
 			say "You weren't able to pull it free. ";
