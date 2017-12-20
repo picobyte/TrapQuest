@@ -59,6 +59,7 @@ Check standing:
 	let B be the weight of the player;
 	if the throne is triggered, dethrone the player instead;
 	if the player is upright, say "You are already standing up!" instead;
+	if the player is on a skippy ball, try the player dismounting;
 	if the body soreness of the player is 10, say "Your legs and body have been ruined by this game, you're not going to be able to stand up until you get some proper rest or healing." instead;
 	if the standing capability of the player <= 0, say "Your legs are completely worn out, you'll have to wait a while." instead;
 	if the player is subdued:

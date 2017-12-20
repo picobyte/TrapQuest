@@ -168,13 +168,12 @@ The player can't attack when prone rule is listed in the ability to kick rules.
 This rule causes an attack to fail when the player is mounted. If the player is attacking manually, outputs a brief message explaining why.
 
 +!]
-This is the player can't attack when mounted rule:
-	if the player is mounted:
+This is the player can't knee when mounted rule:
+	if the player is on a rideable vehicle:
 		if autoattack is 0, say "You cannot knee when mounted.";
 		rule fails.
 
-The player can't attack when mounted rule is listed in the ability to knee rules.
-
+The player can't knee when mounted rule is listed in the ability to knee rules.
 
 [!<ThePlayerCanNotAttackWhenImmobileRule>+
 

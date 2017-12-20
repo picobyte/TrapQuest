@@ -411,13 +411,14 @@ To compute (M - a wench) entering mouth:
 	if milking is 1:
 		do nothing;
 	otherwise:
-		if the player is clit stuck:
-			say "The [M] yanks on your clit lead and forces you to roll over onto your back!";
-		otherwise:
-			say "The [M] tries to roll you over onto your back!";
 		let R be a random number between the difficulty of M * 3 and 27;
 		let B be the weight of the player + (the strength of the player / 3);
 		if presented-orifice is face or the player is subdued or M is friendly-fucking, now B is 0; [If the player consents, she flips you automatically]
+		if the player is clit stuck:
+			say "The [M] yanks on your clit lead and forces you to roll over onto your back!";
+			now B is 0;
+		otherwise:
+			say "The [M] tries to roll you over onto your back!";
 		if debugmode is 1, say "Player [B * 1].5 | [R] Girl[line break]";
 		if R > B:
 			now the suffocation of M is 0; [This is what we use to track how many turns the wench has been forcing the player to hold their breath.]

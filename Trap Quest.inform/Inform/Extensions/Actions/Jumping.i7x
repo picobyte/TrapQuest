@@ -36,7 +36,7 @@ Check jumping:
 Understand "leap", "bounce", "ju" as jumping.
 
 After jumping:
-	if the player is on skippy ball (called S) and there is a skippy dildo (called D) part of S:
+	if the player is on skippy ball (called S) and there is a skippy-dildo (called D) part of S:
 		if D is worn by the player:
 			let P be the vagina;
 			if the player is male or D is penetrating the asshole:

@@ -106,12 +106,12 @@ To trigger (Y - an ass hook):
 			if the stickiness of S > 0:
 				humiliate 50;
 				say "As you are pulled upright, the skippy ball glued to you is also pulled from the ground. ";
-				if there is a skippy dildo (called D) part of S and the size of D > 0 and D is worn by the player:
+				if there is a skippy-dildo (called D) part of S and the size of D > 0 and D is worn by the player:
 					say "The dildo, still plugged halfway in your [if D is penetrating the asshole][asshole][otherwise][vagina][end if], is clearly visible! 'Nothing to see here, now please move along.' ";
 					humiliate 150;
 			otherwise:
 				say "As you are pulled upright, the skippy ball rolls away. ";
-				if there is a skippy dildo (called D) part of S and the size of D > 0 and D is worn by the player:
+				if there is a skippy-dildo (called D) part of S and the size of D > 0 and D is worn by the player:
 					say "The dildo on it is clearly visible[if D is penetrating the vagina], still slick with your juices[end if].";
 					humiliate 80;
 				silently try getting off S;

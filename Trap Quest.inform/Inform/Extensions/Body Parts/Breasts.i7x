@@ -368,7 +368,7 @@ REQUIRES COMMENTING
 To say TotalDesc of breasts:
 	say "You are ";
 	if the player is not prone:
-		if the largeness of breasts < 11 or the latex-transformation of the player > 1, say "[if the throne is triggered or the player is horse stuck or the player is mounted]sitting down[otherwise]standing up[end if] with [if the largeness of breasts is 1]a [end if]";
+		if the largeness of breasts < 11 or the latex-transformation of the player > 1, say "[if the throne is triggered or the player is horse stuck or the player is riding]sitting down[otherwise]standing up[end if] with [if the largeness of breasts is 1]a [end if]";
 		otherwise say "somehow managing to [stayDesc] up with ";
 	otherwise:
 		if the largeness of breasts < 11 or the latex-transformation of the player > 1, say "on your knees, with [if the largeness of breasts is 1]a [end if]";

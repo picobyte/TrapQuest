@@ -154,8 +154,8 @@ To compute turn:
 	compute flight; [Flight stuff must go first and last - the concept is it's checking if anything that happened caused the player to start flying.]
 	if the player is upright:
 		compute player standing;
-	otherwise if the player is mounted:
-		compute player mounted;
+	otherwise if the player is riding:
+		compute player hitching a ride;
 	otherwise:
 		compute player kneeling;
 	compute periodic effects with earnings local-earnings and seconds local-seconds;

@@ -37,9 +37,7 @@ Carry out PinkEating:
 	teleport to Dungeon12;
 	remove all interest;
 	if the player is not upright:
-		if the player is on a Skippy Ball (called S):
-			if the stickiness of S > 0, now the stickiness of S is 0;
-			if a skippy dildo (called D) is part of S, end the penetration of D;
+		if the player is on a Skippy Ball (called S), force off S;
 		now the stance of the player is 0;
 		say "[bold type]You are now standing.[roman type]";
 	if there is a worn lipstick collar, now a random worn lipstick collar is not tethering;

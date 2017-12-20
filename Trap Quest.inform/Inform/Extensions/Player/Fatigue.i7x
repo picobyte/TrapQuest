@@ -16,7 +16,7 @@ Increases by 1 each turn the player spends on their knees.  Essentially the long
 *@!]
 The player has a number called fatimod.  The fatimod of the player is usually 1.
 
-The player has a number called stance.  The stance of the player is usually 0. [0-standing, 1-kneeling, 2-mounted]
+The player has a number called stance.  The stance of the player is usually 0. [0-standing, 1-kneeling, 2-riding]
 [!<YourselfIsUpright>+
 
 Is the player standing?
@@ -40,7 +40,7 @@ Definition: yourself is prone:
 Is the player on a rideable vehicle?
 
 +!]
-Definition: yourself is mounted:
+Definition: yourself is riding:
 	if the stance of it is 2, decide yes;
 	decide no.
 
@@ -50,9 +50,13 @@ REQUIRES COMMENTING
 
 +!]
 To say movementDesc:
-	if the player is upright, say "walk";
-	if the player is crawling, say "crawl";
-	if the player is on a skippy ball, say "bounce";
+	if the player is upright:
+		say "walk";
+	otherwise if the player is crawling:
+		say "crawl";
+	otherwise if the player is riding:
+		if the player is on a skippy ball:
+			say "bounce";
 
 [!<SayMovementDesc>+
 
@@ -60,9 +64,13 @@ REQUIRES COMMENTING
 
 +!]
 To say movingDesc:
-	if the player is upright, say "walking";
-	if the player is crawling, say "crawling";
-	if the player is on a skippy ball, say "bouncing";
+	if the player is upright:
+		say "walking";
+	otherwise if the player is crawling:
+		say "crawling";
+	otherwise if the player is riding:
+		if the player is on a skippy ball:
+			say "bouncing";
 
 [!<SayMovedDesc>+
 
@@ -70,9 +78,13 @@ REQUIRES COMMENTING
 
 +!]
 To say movedDesc:
-	if the player is upright, say "walked";
-	if the player is crawling, say "crawled";
-	if the player is on a skippy ball, say "bounced";
+	if the player is upright:
+		say "walked";
+	otherwise if the player is crawling:
+		say "crawled";
+	otherwise if the player is riding:
+		if the player is on a skippy ball:
+			say "bounced";
 
 [!<SayStayDesc>+
 
@@ -80,10 +92,13 @@ REQUIRES COMMENTING
 
 +!]
 To say stayDesc:
-	if the player is upright, say "stand";
-	if the player is crawling, say "lie";
-	if the player is mounted:
-		if the player is on a skippy ball, say "sit";
+	if the player is upright:
+		say "stand";
+	otherwise if the player is crawling:
+		say "lie";
+	otherwise if the player is riding:
+		if the player is on a skippy ball:
+			say "sit";
 
 To say kneeForcing:
 	if the player is upright:

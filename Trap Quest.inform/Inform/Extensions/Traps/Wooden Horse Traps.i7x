@@ -139,10 +139,9 @@ To trigger (Y - a painted horse):
 	now the reset-timer of Y is 90000; [Doesn't reset]
 	now Y is not untriggered;
 	now Y is revealed;
-	if the player is mounted:
-		if the player is on a skippy ball (called S):
-			say "A giant triangular block of wood with a horse head at the front shoots out from the ground beneath you, pushing you and your skippy ball over. ";
-			get thrown off S;
+	if the player is on a skippy ball (called S):
+		say "A giant triangular block of wood with a horse head at the front shoots out from the ground beneath you, pushing you and your skippy ball over. ";
+		get thrown off S;
 	otherwise:
 		say "A giant triangular block of wood with a horse head at the front shoots out from the ground beneath you, [if the player is prone]forcing you upright and [end if]pulling you up until your feet aren't touching the floor.  All of your weight is forced onto the top corner of this wooden 'horse' and more specifically onto your [if the player is female][vagina] and [end if][asshole].  [if the latex-transformation of the player > 3]Your rubbery crotch is unaffected by the weight on it.  [otherwise if the player is diapered]The padding of your diaper is helping at bit but the pain is still unmanageable.  [otherwise if the weight of the player < 5]Your light weight is helping at bit but the pain is still unmanageable.  [otherwise if the weight of the player > 15]Your weight is making it even worse!  [end if]You're going to quickly get more sore and if you stay on here for too long, you'll definitely faint!  [one of]Looking forward, you notice that[or]Once again you can see that[stopping] there are five buttons embedded into the top of the head of the horse.  [one of]Maybe one of them will let you down?[or]One of them should let you down.[stopping]";
 		now the stance of the player is 0;
