@@ -22,7 +22,7 @@ REQUIRES COMMENTING
 
 +!]
 To say SkippyBallDesc:
-	say "[one of]You remember this from your childhood. Some kids used to call it a moon hopper, or kangaroo ball, but you were used to call it as a skippy ball.[or]A big round red ball with a few protrusions sticking out of it. While sitting on it they provide the leverage for you to leg-battle gravity in bounces.[or]Skippy balls used to be so big and funny, but then, last time you saw one, you were eleven.[or]Why is this peculiar childhood object in this game?[or]Lets not jump to conclusions.[or][stopping]";
+	say "[one of]You remember this from your childhood. Some kids used to call it a moon hopper, or kangaroo ball, but you were used to call it a skippy ball.[or]A big round red ball with a few protrusions sticking out of it. While sitting on it they provide the leverage for you to leg-battle gravity in bounces.[or]Skippy balls used to be so big and funny, but then, last time you saw one, you were eleven.[or]Why is this peculiar childhood object in this game?[or]Lets not jump to conclusions.[or][stopping]";
 
 [Does the player mean getting on the skippy ball when there is a skippy ball:
 	It is likely.]
@@ -60,7 +60,7 @@ To decide whether a pull of (X - a number) leaves you stuck to (S - a skippy bal
 	if the stickiness of S > 0:
 		decrease the stickiness of S by X;
 		if the stickiness of S > 0:
-			say "You only managed to pull out some hairs on your [one of]ankles[or]calves[or]calves[or]knees[or]inner thighs[or]inner thighs[or]crotch[stopping]. ";
+			say "You only managed to pull out some hairs out of your [one of]ankles[or]calves[or]calves[or]knees[or]inner thighs[or]inner thighs[or]crotch[stopping]. ";
 			decide yes;
 		now the stickiness of S is 0;
 		if X > 3:
@@ -89,7 +89,7 @@ To get thrown off (S - a skippy ball):
 			let R be a random number between 5 and 25;
 			if R < X:
 				silently try kneeling;
-				say "You fall flat on your face. ";
+				say "You fall on all fours. ";
 				if autostand is 1 and the player is prone, now delayed stand is 1;
 			otherwise:
 				increase the fat-burning of the player by 2;
